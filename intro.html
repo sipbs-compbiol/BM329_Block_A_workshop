@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Leighton Pritchard">
+
+<title>BM329 Workshop A: Microbial Identification - 1&nbsp; Introduction</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./data.html" rel="next">
+<link href="./index.html" rel="prev">
+<link href="./icon_32.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">BM329 Workshop A: Microbial Identification</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/sipbs-compbiol/BM329_Block_A_workshop" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface to the 2023-24 BM329 Block A workshop</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16s.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">16S</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mlst.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Multi-Locus Sequence Typing (MLST)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./whole_genome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Whole-genome Comparison</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lpsn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">LPSN: the List of Prokaryotic names with Standing in Nomenclature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#say-cheese" id="toc-say-cheese" class="nav-link active" data-scroll-target="#say-cheese"><span class="header-section-number">1.1</span> Say cheese!</a></li>
+  <li><a href="#a-month-later" id="toc-a-month-later" class="nav-link" data-scroll-target="#a-month-later"><span class="header-section-number">1.2</span> A month later</a></li>
+  <li><a href="#in-the-blood" id="toc-in-the-blood" class="nav-link" data-scroll-target="#in-the-blood"><span class="header-section-number">1.3</span> In the blood</a></li>
+  <li><a href="#controversy" id="toc-controversy" class="nav-link" data-scroll-target="#controversy"><span class="header-section-number">1.4</span> Controversy</a></li>
+  <li><a href="#your-challenge" id="toc-your-challenge" class="nav-link" data-scroll-target="#your-challenge"><span class="header-section-number">1.5</span> Your challenge</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/sipbs-compbiol/BM329_Block_A_workshop/edit/main/intro.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/sipbs-compbiol/BM329_Block_A_workshop/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="say-cheese" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="say-cheese"><span class="header-section-number">1.1</span> Say cheese!</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Ballard_Farmers'_Market_-_vegetables.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Ballard Farmer’s Market (Wikimedia Commons)</figcaption>
+</figure>
+</div>
+<p>A few weeks ago you went to a food festival and farmer’s market, and passed a cheese stall. You love cheese and the smell was making you hungry, so you tried a few samples, and bought the one you found tastiest. It was a delicious <a href="https://en.wikipedia.org/wiki/Blue_cheese">blue cheese</a>, made from <a href="https://en.wikipedia.org/wiki/Pasteurization">unpasteurised</a> cow’s milk, and with natural <a href="https://en.wikipedia.org/wiki/Rennet">rennet</a>.</p>
+<p>You ate it on sourdough crackers, with some fig and plum chutney, and it was a savoury explosion. You thought to yourself what a great idea it was to go to the farmer’s market. And it was even a local producer, so you kept the <a href="https://en.wikipedia.org/wiki/Food_miles">food miles</a> down and supported the local community. You felt great!</p>
+</section>
+<section id="a-month-later" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="a-month-later"><span class="header-section-number">1.2</span> A month later</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/Sick-High-Quality-PNG.png" class="img-fluid figure-img" style="width:30.0%"></p>
+</figure>
+</div>
+<p>Now it’s about a month later. But you’re not feeling great at all. You haven’t felt great for a couple of days in fact, and you’ve got quite a list of signs and symptoms.</p>
+<ul>
+<li>you’ve had a fever for day or so</li>
+<li>you’re sweating, even though it’s cool</li>
+<li>you’ve got a nasty headache you can’t shift, even with paracetamol</li>
+<li>you’re not hungry and haven’t felt like eating at all, since this started</li>
+<li>you’re exhausted all the time</li>
+<li>all your joints ache, your muscles feel like you’ve wrestled an elephant seal, and don’t get you started about your back</li>
+</ul>
+<p>But you <em>were</em> out at the weekend, and caned it a bit. Maybe it’s just a really bad hangover?</p>
+<p>It’s all very nonspecific. It’s not <a href="https://en.wikipedia.org/wiki/Flu_season">’flu season</a> but even though there’s no ’flu going round it feels like the worst ’flu of your life and worse than any hangover you’ve had so far. So you <a href="https://111.nhs.uk/">called 111</a> and off you popped to the pharmacist like they said, who immmediately suggested you go to your GP, who bounced you without delay to Accident and Emergency.</p>
+</section>
+<section id="in-the-blood" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="in-the-blood"><span class="header-section-number">1.3</span> In the blood</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Hospital_room_ubt.jpeg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">A hospital room (Wikimedia Commons)</figcaption>
+</figure>
+</div>
+<p>You’re in a hospital room now, feeling terrible. Your bloods have been taken - so many bloods! - and you’ve been told that the phlebotomists have found an unexpected bacterium. They’re trying to grow it up right now. As you’re a microbiologist you’re naturally curious, and you ask if they’ve identified it yet.</p>
+<p>It turns out they’ve been having difficulty finding a medium that the bacteria will grow on. They’re trying blood and tryptose broth and, while that’s meeting with some success, it’s very, very slow-growing.</p>
+<p>They’ve managed to get a preliminary identification from a small sample by MALDI-TOF, which suggests that it’s a <em>Brucella</em> strain of some sort.</p>
+<p>Your heart sinks. You really, <em>really</em> do not want <a href="https://www.nhs.uk/conditions/brucellosis/">brucellosis</a>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why you don’t want brucellosis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Although uncommon the UK, brucellosis is endemic in many developing countries (<span class="citation" data-cites="Laine2023-py">Laine et al. (<a href="references.html#ref-Laine2023-py" role="doc-biblioref">2023</a>)</span>). The causative agents, <em>Brucella</em> spp. bacteria, grow less quickly in the open environment than in their hosts, and are highly contagious intracellular pathogens readily spread between individuals and by infectious body fluids (<span class="citation" data-cites="Moreno2023-yu">Moreno et al. (<a href="references.html#ref-Moreno2023-yu" role="doc-biblioref">2023</a>)</span>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/laine_fig_5.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure 5 from (<span class="citation" data-cites="Laine2023-py">Laine et al. (<a href="references.html#ref-Laine2023-py" role="doc-biblioref">2023</a>)</span>) illustrating estimated incidence of human brucellosis, worldwide.</figcaption>
+</figure>
+</div>
+<p>In humans brucellosis is not ofen fatal, but it can be severely disabling. Brucellosis presents in both infectious and non-infectious forms and can be highly persistent, causing chronic debilitation and granulomas within organs. The most common presentations involve greatly enlarged liver and spleen, but other complications - including neurological - may be seen (<span class="citation" data-cites="Franco2007-lj">Franco et al. (<a href="references.html#ref-Franco2007-lj" role="doc-biblioref">2007</a>)</span>). The presentation can be extremely variable, to the extent that “in endemic areas, everythign can be due to brucellosis until proven different” (<span class="citation" data-cites="Bosilkovski2021-wt">Bosilkovski, Keramat, and Arapović (<a href="references.html#ref-Bosilkovski2021-wt" role="doc-biblioref">2021</a>)</span>).</p>
+<p>Blood and bone marrow culture remains the gold standard for diagnosis of brucellosis, but <em>Brucella</em> spp. grow slowly, and it’s not unusual for a culture to take a week or more to reach a size suitable for diagnosis. ELISA is popular but less specific than than many other diagnostic tests. Molecular methods such as PCR and MALDI-TOF have not been as widely validated (<span class="citation" data-cites="Franco2007-lj">Franco et al. (<a href="references.html#ref-Franco2007-lj" role="doc-biblioref">2007</a>)</span>).</p>
+<p>Treatment of brucellosis is unpleasant for the patient, and has hardly changed this century. Treatment requires simultaneous administration of multiple antibiotics for an extended period (e.g.&nbsp;200mg doxycycline plus 900mg rifampicin, and perhaps a fluoroquinoline in support, for 6-8 weeks). Relapse rates are high (up to 25%) with oral delivery alone but lower with parenteral delivery (up to about 8%) (<span class="citation" data-cites="Franco2007-lj">Franco et al. (<a href="references.html#ref-Franco2007-lj" role="doc-biblioref">2007</a>)</span>, <span class="citation" data-cites="Bosilkovski2021-wt">Bosilkovski, Keramat, and Arapović (<a href="references.html#ref-Bosilkovski2021-wt" role="doc-biblioref">2021</a>)</span>).</p>
+<p>Hospital staff potentially exposed to the infectious agent need to undergo the same treatment as prophylaxis.</p>
+</div>
+</div>
+</div>
+<p>At the lab they’ve managed to sequence the bacterium that’s in your blood, using an <a href="https://nanoporetech.com/products/sequence/flongle">Oxford Nanopore flongle</a> they had lying around. The assembled genome has come back, but the <a href="https://www.ft.com/content/b593116d-f948-4757-b2fa-c74adadc8b42">NHS is chronically underfunded and the staff are massively overworked</a>, so your consultant hasn’t had time to learn how to classify bacteria from genome sequence data.</p>
+<p>“I’ll have a go if you like,” you say.</p>
+</section>
+<section id="controversy" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="controversy"><span class="header-section-number">1.4</span> Controversy</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/moreno_fig_1.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure 1 from (<span class="citation" data-cites="Moreno2022-ha">Moreno et al. (<a href="references.html#ref-Moreno2022-ha" role="doc-biblioref">2022</a>)</span>), showing the relationship between <em>Brucella</em> and <em>Ochrobactrum</em> species. <em>Brucella</em> is a group of bacteria nested within <em>Ochrobactrum</em>.</figcaption>
+</figure>
+</div>
+<p>As an expert biomedical microbiologist, <em>you</em> know that there has recently been a lot of controversy around identification <em>Brucella</em>, and that preliminary identifications of <em>Brucella</em> spp. shouldn’t be taken at face value.</p>
+<p>You are aware that recent changes in microbial nomenclature renamed a whole genus of much less worrying bacteria belonging to the <em>Ochrobactrum</em> genus to <em>Brucella</em> (<span class="citation" data-cites="Hordt2020-ba">Hördt et al. (<a href="references.html#ref-Hordt2020-ba" role="doc-biblioref">2020</a>)</span>), even though they’re an opportunistic pathogen and not particularly virulent (<span class="citation" data-cites="Hagiya2013-mv">Hagiya et al. (<a href="references.html#ref-Hagiya2013-mv" role="doc-biblioref">2013</a>)</span>). Many microbiologists who work in clinical settings, or with <em>Brucella</em>, object to the renaming (<span class="citation" data-cites="Moreno2022-ha">Moreno et al. (<a href="references.html#ref-Moreno2022-ha" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="Moreno2023-yu">Moreno et al. (<a href="references.html#ref-Moreno2023-yu" role="doc-biblioref">2023</a>)</span>). Even so, some commercial diagnostic equipment has updated its databases and now calls as <em>Brucella</em> what used to be <em>Ochrobactrum</em>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The <em>Brucella</em>/<em>Ochrobactrum</em> controversy
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In 2020, a manuscript was published applying a bioinformatics methodology to over 1,000 genomes of <em>Alphaproteobacteria</em> type strains. <em>Alphaproteobacteria</em> is the taxonomic Class that contains both <em>Brucella</em> and <em>Ochrobactrum</em> genera (<span class="citation" data-cites="Hordt2020-ba">Hördt et al. (<a href="references.html#ref-Hordt2020-ba" role="doc-biblioref">2020</a>)</span>).</p>
+<p>In phylogenetic trees, <em>Brucella</em> and <em>Ochrobactrum</em> are closely-related. <em>Ochrobactrum</em> form a group called a clade (they share a single common ancestor), but <em>Brucella</em> appears as a coherent, <em>derived</em> group within this clade.</p>
+<p>The bioinformatics method applied in <span class="citation" data-cites="Hordt2020-ba">Hördt et al. (<a href="references.html#ref-Hordt2020-ba" role="doc-biblioref">2020</a>)</span> reproduced this relationship, and a proposal was made that, because <em>Brucella</em> was nested within <em>Ochrobactrum</em>, the entire group of bacteria - including all <em>Ochrobactrum</em> - should be named <em>Brucella</em>. It was argued in this paper that, even though <em>Brucella</em> and <em>Ochrobactrum</em> are not as virulent as each other, they should be considered to belong to different “risk groups,” but to be fundamentally similar organisms (<span class="citation" data-cites="Hordt2020-ba">Hördt et al. (<a href="references.html#ref-Hordt2020-ba" role="doc-biblioref">2020</a>)</span>).</p>
+<p>Clinical microbiologists and other scientists rejected this proposal, arguing that the names of bacteria do more than indicate where they lie in a phylogenetic tree. They argue that the customary use of brucellosis to refer to the serious disease caused by <em>Brucella</em> ends up being confused - potentially dangerously - if relatively low-risk bacteria such as <em>Ochrobactrum</em> are renamed as <em>Brucella</em>. They also argue that “typology,” taking into consideration more than phylogenetic placement, is necessary for meaningful naming and subdivision of bacteria, and that bioinformatics methods alone are not enough to define bacterial taxa. They consider that <em>Brucella</em> and <em>Ochrobactrum</em> strains show quite different phenotypes, and should remain under different names (<span class="citation" data-cites="Moreno2022-ha">Moreno et al. (<a href="references.html#ref-Moreno2022-ha" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="Moreno2023-yu">Moreno et al. (<a href="references.html#ref-Moreno2023-yu" role="doc-biblioref">2023</a>)</span>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/moreno_table_1.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Table 1 from (<span class="citation" data-cites="Moreno2022-ha">Moreno et al. (<a href="references.html#ref-Moreno2022-ha" role="doc-biblioref">2022</a>)</span>)</figcaption>
+</figure>
+</div>
+<p>Since the nomenclature change, there have been instances of bacteria formerly known as <em>Ochrobactrum</em> being identified as <em>Brucella</em> by MALDI-TOF instruments in a clinical context, leading to avoidable prophylactic treatment of hospital staff to avoid infection with <em>Brucella</em> (<span class="citation" data-cites="Moreno2023-yu">Moreno et al. (<a href="references.html#ref-Moreno2023-yu" role="doc-biblioref">2023</a>)</span>).</p>
+<p>Now that the name <em>Brucella</em> has been validly published in the literature for bacteria formerly known as <em>Ochrobactrum</em>, and is considered the “correct” name for the group, it is highly unlikely it would be withdrawn, under the the rules of the <a href="https://en.wikipedia.org/wiki/International_Code_of_Nomenclature_of_Prokaryotes">International Code of Nomenclature of Prokaryotes</a> (ICNP, the Prokaryotic Code). The controversy continues.</p>
+</div>
+</div>
+</div>
+<p>You know that if you make a positive identification of this bacterium as something other than <em>Brucella</em>, you might avoid eight weeks of unpleasant multiple antibiotic treatment, and so can staff who were potentially exposed to <em>Brucella</em> through your sample. If this infection does turn out to be <em>Brucella</em> they would also need to undergo prophylactic treatment.</p>
+<p>Your identification could save a lot of people quite a bit of unpleasantness.</p>
+</section>
+<section id="your-challenge" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="your-challenge"><span class="header-section-number">1.5</span> Your challenge</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Identify the infectious bacterium using bioinformatics methods
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will be provided with the assembled draft genome sequence of the organism that was isolated from your blood and sequenced on the flongle and, for convenience, some additional information (e.g.&nbsp;16S sequence data) that may help with identification.</p>
+<p>In the sections that follow, you will be guided through identification of the organism using a number of different bioinformatics approaches and online resources. Once you have conducted these analyses and identified your organism, you should complete the formative questions on MyPlace. These will ask you about your identification, and your reasons for making that identification.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Let's get started">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Let’s get started
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Begin your analysis by clicking on the link to <a href="./data.html"><code>Data</code></a> (here, or below)</p>
+</div>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Bosilkovski2021-wt" class="csl-entry" role="listitem">
+Bosilkovski, Mile, Fariba Keramat, and Jurica Arapović. 2021. <span>“The Current Therapeutical Strategies in Human Brucellosis.”</span> <em>Infection</em> 49 (5): 823–32.
+</div>
+<div id="ref-Franco2007-lj" class="csl-entry" role="listitem">
+Franco, Marı́a Pı́a, Maximilian Mulder, Robert H Gilman, and Henk L Smits. 2007. <span>“Human Brucellosis.”</span> <em>Lancet Infect. Dis.</em> 7 (12): 775–86.
+</div>
+<div id="ref-Hagiya2013-mv" class="csl-entry" role="listitem">
+Hagiya, Hideharu, Kouhei Ohnishi, Miyako Maki, Naoto Watanabe, and Tomoko Murase. 2013. <span>“Clinical Characteristics of Ochrobactrum Anthropi Bacteremia.”</span> <em>J. Clin. Microbiol.</em> 51 (4): 1330–33.
+</div>
+<div id="ref-Hordt2020-ba" class="csl-entry" role="listitem">
+Hördt, Anton, Marina Garcı́a López, Jan P Meier-Kolthoff, Marcel Schleuning, Lisa-Maria Weinhold, Brian J Tindall, Sabine Gronow, Nikos C Kyrpides, Tanja Woyke, and Markus Göker. 2020. <span>“Analysis of 1,000+ Type-Strain Genomes Substantially Improves Taxonomic Classification of Alphaproteobacteria.”</span> <em>Front. Microbiol.</em> 11 (April): 468.
+</div>
+<div id="ref-Laine2023-py" class="csl-entry" role="listitem">
+Laine, Christopher G, Valen E Johnson, H Morgan Scott, and Angela M Arenas-Gamboa. 2023. <span>“Global Estimate of Human Brucellosis Incidence.”</span> <em>Emerg. Infect. Dis.</em> 29 (9): 1789–97.
+</div>
+<div id="ref-Moreno2022-ha" class="csl-entry" role="listitem">
+Moreno, Edgardo, José Marı́a Blasco, Jean Jacques Letesson, Jean Pierre Gorvel, and Ignacio Moriyón. 2022. <span>“Pathogenicity and Its Implications in Taxonomy: The Brucella and Ochrobactrum Case.”</span> <em>Pathogens</em> 11 (3).
+</div>
+<div id="ref-Moreno2023-yu" class="csl-entry" role="listitem">
+Moreno, Edgardo, Earl A Middlebrook, Pamela Altamirano-Silva, Sascha Al Dahouk, George F Araj, Vilma Arce-Gorvel, Ángela Arenas-Gamboa, et al. 2023. <span>“If You’re Not Confused, You’re Not Paying Attention: Ochrobactrum Is Not Brucella.”</span> <em>J. Clin. Microbiol.</em> 61 (8): e0043823.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface to the 2023-24 BM329 Block A workshop</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./data.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">These BM329 workshops were written by Leighton Pritchard and Morgan Feeney.</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">This book was built with <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+
+</body></html>
