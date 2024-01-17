@@ -1,0 +1,102 @@
+# Introduction
+
+## Say cheese!
+
+![Ballard Farmer's Market (Wikimedia Commons)](https://upload.wikimedia.org/wikipedia/commons/9/92/Ballard_Farmers'_Market_-_vegetables.jpg){width=80%}
+
+A few weeks ago you went to a food festival and farmer's market, and passed a cheese stall. You love cheese and the smell was making you hungry, so you tried a few samples, and bought the one you found tastiest. It was a delicious [blue cheese](https://en.wikipedia.org/wiki/Blue_cheese), made from [unpasteurised](https://en.wikipedia.org/wiki/Pasteurization) cow's milk, and with natural [rennet](https://en.wikipedia.org/wiki/Rennet).
+
+You ate it on sourdough crackers, with some fig and plum chutney, and it was a savoury explosion. You thought to yourself what a great idea it was to go to the farmer's market. And it was even a local producer, so you kept the [food miles](https://en.wikipedia.org/wiki/Food_miles) down and supported the local community. You felt great!
+
+## A month later
+
+![](assets/images/Sick-High-Quality-PNG.png){width=30% fig-align="center"}
+
+Now it's about a month later. But you're not feeling great at all. You haven't felt great for a couple of days in fact, and you've got quite a list of signs and symptoms.
+
+- you've had a fever for day or so
+- you're sweating, even though it's cool
+- you've got a nasty headache you can't shift, even with paracetamol
+- you're not hungry and haven't felt like eating at all, since this started
+- you're exhausted all the time
+- all your joints ache, your muscles feel like you've wrestled an elephant seal, and don't get you started about your back
+
+But you _were_ out at the weekend, and caned it a bit. Maybe it's just a really bad hangover?
+
+It's all very nonspecific. It's not ['flu season](https://en.wikipedia.org/wiki/Flu_season) but even though there's no 'flu going round it feels like the worst 'flu of your life and worse than any hangover you've had so far. So you [called 111](https://111.nhs.uk/) and off you popped to the pharmacist like they said, who immmediately suggested you go to your GP, who bounced you without delay to Accident and Emergency.
+
+## In the blood
+
+![A hospital room (Wikimedia Commons)](https://upload.wikimedia.org/wikipedia/commons/5/57/Hospital_room_ubt.jpeg){width=80%}
+
+You're in a hospital room now, feeling terrible. Your bloods have been taken - so many bloods! - and you've been told that the phlebotomists have found an unexpected bacterium. They're trying to grow it up right now. As you're a microbiologist you're naturally curious, and you ask if they've identified it yet.
+
+It turns out they've been having difficulty finding a medium that the bacteria will grow on. They're trying blood and tryptose broth and, while that's meeting with some success, it's very, very slow-growing.
+
+They've managed to get a preliminary identification from a small sample by MALDI-TOF, which suggests that it's a _Brucella_ strain of some sort.
+
+Your heart sinks. You really, _really_ do not want [brucellosis](https://www.nhs.uk/conditions/brucellosis/).
+
+::: {.callout-important collapse="true"}
+## Why you don't want brucellosis
+
+Although uncommon the UK, brucellosis is endemic in many developing countries (@Laine2023-py). The causative agents, _Brucella_ spp. bacteria, grow less quickly in the open environment than in their hosts, and are highly contagious intracellular pathogens readily spread between individuals and by infectious body fluids (@Moreno2023-yu).  
+
+![Figure 5 from (@Laine2023-py) illustrating estimated incidence of human brucellosis, worldwide.](assets/images/laine_fig_5.png){width=80%}
+
+In humans brucellosis is not ofen fatal, but it can be severely disabling. Brucellosis presents in both infectious and non-infectious forms and can be highly persistent, causing chronic debilitation and granulomas within organs. The most common presentations involve greatly enlarged liver and spleen, but other complications - including neurological - may be seen (@Franco2007-lj). The presentation can be extremely variable, to the extent that "in endemic areas, everythign can be due to brucellosis until proven different" (@Bosilkovski2021-wt).
+
+Blood and bone marrow culture remains the gold standard for diagnosis of brucellosis, but _Brucella_ spp. grow slowly, and it's not unusual for a culture to take a week or more to reach a size suitable for diagnosis. ELISA is popular but less specific than than many other diagnostic tests. Molecular methods such as PCR and MALDI-TOF have not been as widely validated (@Franco2007-lj).
+
+Treatment of brucellosis is unpleasant for the patient, and has hardly changed this century. Treatment requires simultaneous administration of multiple antibiotics for an extended period (e.g. 200mg doxycycline plus 900mg rifampicin, and perhaps a fluoroquinoline in support, for 6-8 weeks). Relapse rates are high (up to 25%) with oral delivery alone but lower with parenteral delivery (up to about 8%) (@Franco2007-lj, @Bosilkovski2021-wt). 
+
+Hospital staff potentially exposed to the infectious agent need to undergo the same treatment as prophylaxis.
+:::
+
+At the lab they've managed to sequence the bacterium that's in your blood, using an [Oxford Nanopore flongle](https://nanoporetech.com/products/sequence/flongle) they had lying around. The assembled genome has come back, but the [NHS is chronically underfunded and the staff are massively overworked](https://www.ft.com/content/b593116d-f948-4757-b2fa-c74adadc8b42), so your consultant hasn't had time to learn how to classify bacteria from genome sequence data.
+
+"I'll have a go if you like," you say.
+
+## Controversy
+
+![Figure 1 from (@Moreno2022-ha), showing the relationship between _Brucella_ and _Ochrobactrum_ species. _Brucella_ is a group of bacteria nested within _Ochrobactrum_.](assets/images/moreno_fig_1.png){width=80%}
+
+As an expert biomedical microbiologist, _you_ know that there has recently been a lot of controversy around identification _Brucella_, and that preliminary identifications of _Brucella_ spp. shouldn't be taken at face value.
+
+You are aware that recent changes in microbial nomenclature renamed a whole genus of much less worrying bacteria belonging to the _Ochrobactrum_ genus to _Brucella_ (@Hordt2020-ba), even though they're an opportunistic pathogen and not particularly virulent (@Hagiya2013-mv). Many microbiologists who work in clinical settings, or with _Brucella_, object to the renaming  (@Moreno2022-ha, @Moreno2023-yu). Even so, some commercial diagnostic equipment has updated its databases and now calls as _Brucella_ what used to be _Ochrobactrum_.
+
+::: {.callout-important collapse="true"}
+## The _Brucella_/_Ochrobactrum_ controversy
+
+In 2020, a manuscript was published applying a bioinformatics methodology to over 1,000 genomes of _Alphaproteobacteria_ type strains. _Alphaproteobacteria_ is the taxonomic Class that contains both _Brucella_ and _Ochrobactrum_ genera (@Hordt2020-ba).
+
+In phylogenetic trees, _Brucella_ and _Ochrobactrum_ are closely-related. _Ochrobactrum_ form a group called a clade (they share a single common ancestor), but _Brucella_ appears as a coherent, _derived_ group within this clade.
+
+The bioinformatics method applied in @Hordt2020-ba reproduced this relationship, and a proposal was made that, because _Brucella_ was nested within _Ochrobactrum_, the entire group of bacteria - including all _Ochrobactrum_ - should be named _Brucella_. It was argued in this paper that, even though _Brucella_ and _Ochrobactrum_ are not as virulent as each other, they should be considered to belong to different "risk groups," but to be fundamentally similar organisms (@Hordt2020-ba).
+
+Clinical microbiologists and other scientists rejected this proposal, arguing that the names of bacteria do more than indicate where they lie in a phylogenetic tree. They argue that the customary use of brucellosis to refer to the serious disease caused by _Brucella_ ends up being confused - potentially dangerously - if relatively low-risk bacteria such as _Ochrobactrum_ are renamed as _Brucella_. They also argue that "typology," taking into consideration more than phylogenetic placement, is necessary for meaningful naming and subdivision of bacteria, and that bioinformatics methods alone are not enough to define bacterial taxa. They consider that _Brucella_ and _Ochrobactrum_ strains show quite different phenotypes, and should remain under different names (@Moreno2022-ha, @Moreno2023-yu).
+
+![Table 1 from (@Moreno2022-ha)](assets/images/moreno_table_1.png){width=80%}
+
+Since the nomenclature change, there have been instances of bacteria formerly known as _Ochrobactrum_ being identified as _Brucella_ by MALDI-TOF instruments in a clinical context, leading to avoidable prophylactic treatment of hospital staff to avoid infection with _Brucella_ (@Moreno2023-yu).
+
+Now that the name _Brucella_ has been validly published in the literature for bacteria formerly known as _Ochrobactrum_, and is considered the "correct" name for the group, it is highly unlikely it would be withdrawn, under the the rules of the [International Code of Nomenclature of Prokaryotes](https://en.wikipedia.org/wiki/International_Code_of_Nomenclature_of_Prokaryotes) (ICNP, the Prokaryotic Code). The controversy continues.
+:::
+
+You know that if you make a positive identification of this bacterium as something other than _Brucella_, you might avoid eight weeks of unpleasant multiple antibiotic treatment, and so can staff who were potentially exposed to _Brucella_ through your sample. If this infection does turn out to be _Brucella_ they would also need to undergo prophylactic treatment.
+
+Your identification could save a lot of people quite a bit of unpleasantness.
+
+## Your challenge
+
+::: { .callout-caution }
+## Identify the infectious bacterium using bioinformatics methods
+
+You will be provided with the assembled draft genome sequence of the organism that was isolated from your blood and sequenced on the flongle and, for convenience, some additional information (e.g. 16S sequence data) that may help with identification.
+
+In the sections that follow, you will be guided through identification of the organism using a number of different bioinformatics approaches and online resources. Once you have conducted these analyses and identified your organism, you should complete the formative questions on MyPlace. These will ask you about your identification, and your reasons for making that identification.
+:::
+
+::: { .callout-tip title="Let's get started"}
+Begin your analysis by clicking on the link to [`Data`](data.qmd) (here, or below)
+:::

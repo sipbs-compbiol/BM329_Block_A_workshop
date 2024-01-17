@@ -1,0 +1,51 @@
+# Whole-genome Comparison
+
+In this part of the workshop, you will use public resources for whole-genome identification and classification of prokaryotes to help identify your isolate.
+
+::: { .callout-important }
+Please ensure that you have downloaded the genome file for your isolate (`isolate_genome.fasta`) to a suitable location on your computer.
+:::
+
+## TYGS
+
+- Go to the [TYGS](https://tygs.dsmz.de/) server
+- Click on `Submit your query` (top menu), or `Submit your job` (button) to reach the query page
+- Click on the `Browse…` button and navigate to your `isolate_genome.fasta` file to select it for classification.
+- Enter your email address in the `Provide contact details` field
+- Click on `Submit query` and wait for the results
+
+::: { .callout-warning }
+This may take some time (maybe over an hour, depending on server load!), and may not be complete before the end of the workshop.
+
+**Please move on to the next section while you are waiting.**
+:::
+
+- When you get the result confirmation email, check the PDF 
+
+::: { .callout-important title="Questions"}
+1. What is the predicted taxonomic classification of your isolate's genome?
+2. How similar is your isolate's genome to the closest match? (the $d_4$ result is the dDDH (digital DNA-DNA hybridisation) score)
+3. What is your current opinion about the identity of your isolate? How confident are you in the identification?
+:::
+
+## genomeRxiv
+
+- Go to the [genomeRxiv](http://genomerxiv.cs.vt.edu/) server
+- Click on `Identify using a FASTA file`
+- Either click on the `Sequence to be identified` link to bring up a dialogue box through which you can upload the `isolate_genome.fasta` file, or drag the `isolate_genome.fasta` file onto the text.
+- Click on `Identify` and wait for the results
+
+::: { .callout-note }
+The genomeRxiv site may ask you to allow pop-ups. You should allow the pop-ups, as these contain the identification output you need.
+:::
+  
+::: { .callout-important title="Questions"}
+1. What is the predicted taxonomic classification of your isolate's genome? (Check the `Member LINgroups` result)
+2. What is the taxonomic identity assigned to the most similar genome in the database?
+3. How similar is your isolate's genome to the closest match? (Look at the `ANI to Target` value)
+4. What is your current opinion about the identity of your isolate? Have you modified your classification? How confident are you in the identification?
+:::
+
+::: { .callout-tip title="Consider your final evaluation"}
+You have now used a number of different online bioinformatics tools to obtain a possible taxonomic classification for the isolate in your blood sample. You should, by this point, have some idea of what you think the organism is, and how confident you are. Now it's time to take a look at the official prokaryotic nomenclature database, to get a little more context around the candidate taxonomic name. Click on the link to [`LPSN`](lpsn.qmd) (here, or below), to keep going.
+:::
