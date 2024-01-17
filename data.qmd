@@ -1,0 +1,97 @@
+# Data
+
+## Your datasets
+
+The hospital laboratory have provided you with the following data from the bacterium that was isolated from your blood:
+
+- Draft genome sequence: [isolate_genome.fasta](assets/data/isolate_genome.fasta)
+- 16S sequence from the draft genome: [isolate_16S.fasta](assets/data/isolate_16S.fasta)
+
+::: { .callout-tip title="Downloading data files"}
+You can download your data files using the links above. Clicking on the link may open the file in your browser. If this is the case, then you can use the `File -> Save As` menu option to save the file.
+
+Alternatively, right-click (or `Ctrl-`click) on the link, and choose `Save file as…` (or similar) to save the file.
+
+These data files are also available from the [BM329 MyPlace page]().
+:::
+
+::: { .callout-note collapse="true"}
+## FASTA file format
+
+The sequences you have been given are in [FASTA format](https://www.ncbi.nlm.nih.gov/genbank/fastaformat/). This is a very common standard format for representing biological sequences, and looks like this:
+
+```text
+>R431BS_isolate_from_bloods 16S sequence obtained from full genome
+CAACTTGAGAGTTTGATCCTGGCTCAGAACGAACGCTGGCGGCAGGCTTAACACATGCAAGTCGAGCGCC
+CCGCAAGGGGAGCGGCAGACGGGTGAGTAACGCGTGGGAATCTACCTTTTGCTACGGAATAACTCAGGGA
+AACTTGTGCTAATACCGTATGTGCCCTTCGGGGGAAAGATTTATCGGCAAAGGATGAGCCCGCGTTGGAT
+TAGCTAGTTGGTGAGGTAAAGGCTCACCAAGGCGACGATCCATAGCTGGTCTGAGAGGATGATCAGCCAC
+ACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGGACAATGGGCGCAAG
+```
+
+The general format is
+
+```text
+>sequence_identifier sequence_description
+[symbols representing the biological sequence]
+>sequence_identifier sequence_description
+[symbols representing the biological sequence]
+[...]
+```
+
+Each new sequence in the file starts with a right angled bracket (`>`) to indicate a _header line_, which is immediately followed by a unique sequence identifier. This is typically, but not always, an accession number that uniquely identifies the sequence in a database.
+
+If there are any space characters on the _header line_, all text after the space is taken to be a free-text description of the sequence itself.
+
+The lines following the _header line_ then contain the symbols (`A`, `C`, `G`, `T` for DNA, the protein alphabet for protein) that represent the biological sequence itself.
+:::
+
+::: { .callout-tip }
+FASTA files are a _plain text_ format. You can open them in an editor like `notepad` (Windows), `emacs` (Linux) or `TextEdit` (macOS) to see their contents.
+:::
+
+::: { .callout-warning }
+Avoid opening FASTA files in Word or other word-processing software. This software can insert hidden characters which corrupt the data and make it unusable for analysis.
+:::
+
+## Draft genome sequence
+
+Your isolate's genome is not entirely complete, and is not in one single contiguous piece - therefore it is a _draft_ genome. Rather, it is in 41 _contigs_ (contiguous sequences) - sections of the genome. The contigs are not in order which means that, on the real genome, the second contig may not follow the first (and so on), and the first contig may not be where the genome "starts".
+
+The contigs are described in the single [`isolate_genome.fasta`](assets/data/isolate_genome.fasta) file: one sequence per contig. Taken together, the total sequenced genome length is 5,116,355 bases, and the genome has a GC% content of 53.5%.
+
+## 16S sequence
+
+16S ribosomal RNA (16S rRNA) is a highly-optimised, essential component of bacterial SSU (small subunit) ribosomes. Because it is essential, and its function in protein synthesis is central to correct operation of a cell, its biological sequence is highly constrained (it is unlikely that a change in the sequence will enhance or be neutral to function). This has two main implications that make it useful for evolutionary analysis and microbial identification.
+
+- The 16S sequence is similar enough to be recognisable across all prokaryotes
+- The 16S sequence is usually most similar in organisms that share a recent common ancestor, and less similar in organisms that share a more distant common ancestor.
+
+These properties enable the 16S rRNA sequence to be used to reconstruct evolutionary histories of prokaryotes, including the landmark paper that defined Archaea as a new domain of life (@Woese1990-mo). Several online reference databases with curated 16S sequence data are commonly used to enable bioinformatic identification of organisms.
+
+::: { .callout-note }
+These properties also make 16S rRNA useful for identifying which bacteria are present in complex communities (microbiome analyses).
+
+The similarity of 16S sequences across all bacteria mean that a single set of primers (_universal primers_) can be used to amplify most 16S bacterial genes in a sample using PCR.
+
+Sequencing the amplified 16S genes with [high-throughput sequencing](https://www.illumina.com/areas-of-interest/microbiology/microbial-sequencing-methods/16s-rrna-sequencing.html) then allows the distinct identities of many bacteria in a sample to be determined simultaneously.
+:::
+
+::: { .callout-warning collapse="true"}
+## Disadvantages of 16S sequence data for identification and classification
+
+16S sequence data has more recently fallen out of favour for bacterial classification and identification. This is in part due to the increased availability of high-throughput whole-genome sequencing; with this technology the whole genome can be obtained at the same time as the 16S gene sequence, and the extra information allows for more precise identification. But there are also inherent disadvantages of the approach.
+
+- Whole-genome sequencing is practical, inexpensive, and provides more information, including the 16S sequence.
+  - Amplifying a variable subregion of 16S provides about 300bp of information, sequencing the full 16S gene about 1500bp, and sequencing a genome between 1,500,000bp and 12,000,000bp (depending on organism)
+- Some distinct species share identical 16S sequences
+- Some organisms/species possess multiple distinct 16S sequences
+- There is no universal level of similarity (percentage identity) between 16S sequences that always corresponds to a taxonomic division
+- 16S databases contain many sequences that are incomplete, contain errors, or are annotated with the wrong taxonomic identity
+:::
+
+The 16S sequence for your isolate has been identified from the genome sequence and is described in the [`isolate_16S.fasta`](assets/data/isolate_16S.fasta) FASTA file.
+
+::: { .callout-tip title="Begin your identification"}
+You should begin the identification of your isolate by submitting the 16S sequence in `isolate_16S.fasta` to some of these public resources. click on the link to [`16S`](16s.qmd) (here, or below), to get started.
+:::

@@ -1,0 +1,10 @@
+ay: "2023-24"
+
+admin:
+  name: "Leighton Pritchard"
+  email: "leighton.pritchard@strath.ac.uk"
+  homepage: "https://www.strath.ac.uk/staff/pritchardleightondr/"
+
+github:
+  repo: "https://github.com/sipbs-compbiol/BM329_Block_A_workshop"
+  issues: "https://github.com/sipbs-compbiol/BM329_Block_A_workshop/issues"

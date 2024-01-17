@@ -1,0 +1,50 @@
+Locus	Allele	Length	Contig	Start position	End position	Linked data values	Flags
+BACT000001 (rpsA)	51553	1701	R431BS_isolate_from_bloods_contig_2_whole_genome_shotgun_sequence	290129	291829		
+BACT000002 (rpsB)	22884	771	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	633397	634167		
+BACT000003 (rpsC)	20560	711	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	576453	577163		
+BACT000004 (rpsD)	21271	618	R431BS_isolate_from_bloods_contig_6_whole_genome_shotgun_sequence	103392	104009	 species: [Ochrobactrum] quorumnocens [n=2]	
+BACT000005 (rpsE)	19029	561	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	581123	581683		
+BACT000006 (rpsF)	16825	462	R431BS_isolate_from_bloods_contig_11_whole_genome_shotgun_sequence	62224	62685	 species: [Ochrobactrum] quorumnocens [n=1]	
+BACT000008 (rpsH)	17314	399	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	579737	580135	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000009 (rpsI)	19730	474	R431BS_isolate_from_bloods_contig_6_whole_genome_shotgun_sequence	161839	162312	 species: Brucella sp. [n=1]; [Ochrobactrum] quorumnocens [n=1]	
+BACT000010 (rpsJ)	9600	309	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	572942	573250	 species: Brucella pituitosa [n=5]; [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000011 (rpsK)	17233	390	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	585414	585803	 species: [Ochrobactrum] quorumnocens [n=1]	
+BACT000013 (rpsM)	17126	369	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	584906	585274		
+BACT000014 (rpsN)	21165	306	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	579421	579726	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000015 (rpsO)	17155	270	R431BS_isolate_from_bloods_contig_2_whole_genome_shotgun_sequence	338101	338370	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000016 (rpsP)	16659	417	R431BS_isolate_from_bloods_contig_10_whole_genome_shotgun_sequence	34586	35002		
+BACT000017 (rpsQ)	15220	243	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	577840	578082	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000018 (rpsR)	15328	249	R431BS_isolate_from_bloods_contig_11_whole_genome_shotgun_sequence	61973	62221	 species: Brucella sp. [n=1]; [Ochrobactrum] quorumnocens [n=1]	
+BACT000019 (rpsS)	14659	279	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	575782	576060	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000020 (rpsT)	16031	267	R431BS_isolate_from_bloods_contig_2_whole_genome_shotgun_sequence	320815	321081	 species: [Ochrobactrum] quorumnocens [n=2]	
+BACT000021 (rpsU)	11373	231	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	96710	96940	 species: Brucella sp. [n=1]	
+BACT000031 (rplB)	23303	834	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	574933	575766	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000032 (rplC)	20691	723	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	573280	574002		
+BACT000033 (rplD)	21108	621	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	574002	574622		
+BACT000034 (rplE)	19382	558	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	578837	579394	 species: Brucella sp. [n=1]	
+BACT000035 (rplF)	20215	534	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	580174	580707	 species: Brucella sp. [n=1]; [Ochrobactrum] quorumnocens [n=1]	
+BACT000036 (rplL)	102907	372	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	558472	558843	 species: Brucella sp. [n=1]	
+BACT000038 (rplI)	21222	570	R431BS_isolate_from_bloods_contig_11_whole_genome_shotgun_sequence	60244	60813		
+BACT000040 (rplK)	24057	429	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	556371	556799	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000042 (rplM)	17871	465	R431BS_isolate_from_bloods_contig_6_whole_genome_shotgun_sequence	161372	161836		
+BACT000043 (rplN)	17023	369	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	578151	578519		
+BACT000044 (rplO)	19064	471	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	581964	582434		
+BACT000045 (rplP)	17552	414	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	577202	577615	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000046 (rplQ)	18065	429	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	586979	587407	 species: Brucella sp. [n=1]; [Ochrobactrum] quorumnocens [n=1]	
+BACT000048 (rplS)	18086	441	R431BS_isolate_from_bloods_contig_2_whole_genome_shotgun_sequence	583751	584191	 species: Brucella sp. [n=1]	
+BACT000049 (rplT)	18328	405	R431BS_isolate_from_bloods_contig_2_whole_genome_shotgun_sequence	422649	423053		
+BACT000050 (rplU)	16102	432	R431BS_isolate_from_bloods_contig_10_whole_genome_shotgun_sequence	9547	9978		
+BACT000051 (rplV)	16152	390	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	576064	576453	 species: [Ochrobactrum] quorumnocens [n=2]	
+BACT000052 (rplW)	15396	294	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	574619	574912	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000053 (rplX)	16110	306	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	578532	578837	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000056 (rpmA)	17352	270	R431BS_isolate_from_bloods_contig_10_whole_genome_shotgun_sequence	10005	10274	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000057 (rpmB)	14496	294	R431BS_isolate_from_bloods_contig_2_whole_genome_shotgun_sequence	552509	552802	 species: Brucella sp. [n=1]	
+BACT000058 (rpmC)	13153	201	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	577627	577827	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000059 (rpmD)	11493	198	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	581747	581944	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella rhizosphaerae [n=1]; Brucella sp. [n=1]	
+BACT000060 (rpmE)	18103	222	R431BS_isolate_from_bloods_contig_10_whole_genome_shotgun_sequence	148178	148399	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000061 (rpmF)	14597	180	R431BS_isolate_from_bloods_contig_10_whole_genome_shotgun_sequence	97410	97589	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000062 (rpmG)	8908	168	R431BS_isolate_from_bloods_contig_3_whole_genome_shotgun_sequence	173042	173209	 species: Brucella pituitosa [n=5]; Brucella grignonensis [n=1]; Brucella sp. [n=1]; [Ochrobactrum] quorumnocens [n=1]	
+BACT000063 (rpmH)	8546	135	R431BS_isolate_from_bloods_contig_1_whole_genome_shotgun_sequence	69018	69152	 species: [Ochrobactrum] quorumnocens [n=2]; Brucella sp. [n=1]	
+BACT000064 (rpmI)	14084	201	R431BS_isolate_from_bloods_contig_2_whole_genome_shotgun_sequence	423081	423281		
+BACT000065 (rpmJ)	13529	126	R431BS_isolate_from_bloods_contig_10_whole_genome_shotgun_sequence	121486	121611		
+
