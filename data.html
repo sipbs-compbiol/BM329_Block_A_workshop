@@ -294,20 +294,20 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Avoid opening FASTA files in Word or other word-processing software. This software can insert hidden characters which corrupt the data and make it unusable for analysis.</p>
+<p>Avoid opening FASTA files in Word or other word-processing software. This software can insert hidden characters which corrupt the data and make it unusable for analysis. If you save your sequence as a Word file it will be unreadable by bioinformatics programs.</p>
 </div>
 </div>
 </section>
 <section id="draft-genome-sequence" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="draft-genome-sequence"><span class="header-section-number">2.2</span> Draft genome sequence</h2>
-<p>Your isolate’s genome is not entirely complete, and is not in one single contiguous piece - therefore it is a <em>draft</em> genome. Rather, it is in 41 <em>contigs</em> (contiguous sequences) - sections of the genome. The contigs are not in order which means that, on the real genome, the second contig may not follow the first (and so on), and the first contig may not be where the genome “starts”.</p>
-<p>The contigs are described in the single <a href="assets/data/isolate_genome.fasta"><code>isolate_genome.fasta</code></a> file: one sequence per contig. Taken together, the total sequenced genome length is 5,116,355 bases, and the genome has a GC% content of 53.5%.</p>
+<p>Your isolate’s genome is not entirely complete, and is not in one single contiguous piece - therefore it is a <em>draft</em> genome. Instead, it is in 41 <em>contigs</em> (contiguous sequences) - sections of the genome. The contigs are not in order which means that, on the real genome, the second contig may not follow the first (and so on), and the first contig may not be where the genome “starts”.</p>
+<p>The contigs are described in the <a href="assets/data/isolate_genome.fasta"><code>isolate_genome.fasta</code></a> file: one sequence per contig. Taken together, the total sequenced genome length is 5,116,355 bases, and the genome has a GC% content of 53.5%.</p>
 </section>
 <section id="s-sequence" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="s-sequence"><span class="header-section-number">2.3</span> 16S sequence</h2>
-<p>16S ribosomal RNA (16S rRNA) is a highly-optimised, essential component of bacterial SSU (small subunit) ribosomes. Because it is essential, and its function in protein synthesis is central to correct operation of a cell, its biological sequence is highly constrained (it is unlikely that a change in the sequence will enhance or be neutral to function). This has two main implications that make it useful for evolutionary analysis and microbial identification.</p>
+<p><a href="https://en.wikipedia.org/wiki/16S_ribosomal_RNA">16S ribosomal RNA (16S rRNA)</a> is an evolutionarily highly-optimised, essential component of bacterial SSU (small subunit) ribosomes. Because it is essential, and its function in protein synthesis is central to correct operation of the cell, its biological sequence is highly constrained (<a href="https://en.wikipedia.org/wiki/Negative_selection_(natural_selection)">it is unlikely that a change in the sequence will enhance or be neutral to function</a>). This has two main implications that make it useful for evolutionary analysis and microbial identification.</p>
 <ul>
-<li>The 16S sequence is similar enough to be recognisable across all prokaryotes</li>
+<li>The 16S sequence is similar enough to be recognisable in all prokaryotes</li>
 <li>The 16S sequence is usually most similar in organisms that share a recent common ancestor, and less similar in organisms that share a more distant common ancestor.</li>
 </ul>
 <p>These properties enable the 16S rRNA sequence to be used to reconstruct evolutionary histories of prokaryotes, including the landmark paper that defined Archaea as a new domain of life (<span class="citation" data-cites="Woese1990-mo">Woese, Kandler, and Wheelis (<a href="references.html#ref-Woese1990-mo" role="doc-biblioref">1990</a>)</span>). Several online reference databases with curated 16S sequence data are commonly used to enable bioinformatic identification of organisms.</p>
@@ -321,7 +321,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>These properties also make 16S rRNA useful for identifying which bacteria are present in complex communities (microbiome analyses).</p>
+<p>The properties noted above also make 16S rRNA useful for identifying which bacteria are present in complex communities: microbiome analyses (<span class="citation" data-cites="Johnson2019-rb">Johnson et al. (<a href="references.html#ref-Johnson2019-rb" role="doc-biblioref">2019</a>)</span>)).</p>
 <p>The similarity of 16S sequences across all bacteria mean that a single set of primers (<em>universal primers</em>) can be used to amplify most 16S bacterial genes in a sample using PCR.</p>
 <p>Sequencing the amplified 16S genes with <a href="https://www.illumina.com/areas-of-interest/microbiology/microbial-sequencing-methods/16s-rrna-sequencing.html">high-throughput sequencing</a> then allows the distinct identities of many bacteria in a sample to be determined simultaneously.</p>
 </div>
@@ -344,10 +344,10 @@ Disadvantages of 16S sequence data for identification and classification
 <ul>
 <li>Amplifying a variable subregion of 16S provides about 300bp of information, sequencing the full 16S gene about 1500bp, and sequencing a genome between 1,500,000bp and 12,000,000bp (depending on organism)</li>
 </ul></li>
-<li>Some distinct species share identical 16S sequences</li>
-<li>Some organisms/species possess multiple distinct 16S sequences</li>
-<li>There is no universal level of similarity (percentage identity) between 16S sequences that always corresponds to a taxonomic division</li>
-<li>16S databases contain many sequences that are incomplete, contain errors, or are annotated with the wrong taxonomic identity</li>
+<li>Some distinct species share identical 16S sequences (<span class="citation" data-cites="Edgar2018-qi">R. C. Edgar (<a href="references.html#ref-Edgar2018-qi" role="doc-biblioref">2018a</a>)</span>)</li>
+<li>Some organisms/species possess multiple distinct 16S sequences (<span class="citation" data-cites="Edgar2018-qi">R. C. Edgar (<a href="references.html#ref-Edgar2018-qi" role="doc-biblioref">2018a</a>)</span>)</li>
+<li>There is no universal level of similarity (percentage identity) between 16S sequences that always corresponds to a taxonomic division (<span class="citation" data-cites="Edgar2018-cm">R. C. Edgar (<a href="references.html#ref-Edgar2018-cm" role="doc-biblioref">2018b</a>)</span>)</li>
+<li>16S databases contain many sequences that are incomplete, contain errors, or are annotated with the wrong taxonomic identity (<span class="citation" data-cites="Edgar2018-qb">R. Edgar (<a href="references.html#ref-Edgar2018-qb" role="doc-biblioref">2018</a>)</span>)</li>
 </ul>
 </div>
 </div>
@@ -369,6 +369,18 @@ Begin your identification
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Edgar2018-qb" class="csl-entry" role="listitem">
+Edgar, Robert. 2018. <span>“Taxonomy Annotation and Guide Tree Errors in <span>16S</span> <span class="nocase">rRNA</span> Databases.”</span> <em>PeerJ</em> 6 (e5030): e5030.
+</div>
+<div id="ref-Edgar2018-qi" class="csl-entry" role="listitem">
+Edgar, Robert C. 2018a. <span>“Accuracy of Taxonomy Prediction for <span>16S</span> <span class="nocase">rRNA</span> and Fungal <span>ITS</span> Sequences.”</span> <em>PeerJ</em> 6 (e4652): e4652.
+</div>
+<div id="ref-Edgar2018-cm" class="csl-entry" role="listitem">
+———. 2018b. <span>“Updating the 97% Identity Threshold for <span>16S</span> Ribosomal <span>RNA</span> <span>OTUs</span>.”</span> <em>Bioinformatics</em> 34 (14): 2371–75.
+</div>
+<div id="ref-Johnson2019-rb" class="csl-entry" role="listitem">
+Johnson, Jethro S, Daniel J Spakowicz, Bo-Young Hong, Lauren M Petersen, Patrick Demkowicz, Lei Chen, Shana R Leopold, et al. 2019. <span>“Evaluation of <span>16S</span> <span class="nocase">rRNA</span> Gene Sequencing for Species and Strain-Level Microbiome Analysis.”</span> <em>Nat. Commun.</em> 10 (1): 5029.
+</div>
 <div id="ref-Woese1990-mo" class="csl-entry" role="listitem">
 Woese, C R, O Kandler, and M L Wheelis. 1990. <span>“Towards a Natural System of Organisms: Proposal for the Domains Archaea, Bacteria, and Eucarya.”</span> <em>Proc. Natl. Acad. Sci. U. S. A.</em> 87 (12): 4576–79.
 </div>

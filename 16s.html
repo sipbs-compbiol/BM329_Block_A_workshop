@@ -229,8 +229,9 @@ Important
 <ul>
 <li><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">NCBI-BLAST webservice</a></li>
 <li><a href="https://blast.ncbi.nlm.nih.gov/doc/blast-help/">NCBI-BLAST help pages</a></li>
+<li><a href="https://www.nlm.nih.gov/ncbi/workshops/2022-10_Basic-Web-BLAST/how-blast-works.html">How BLAST works</a></li>
 </ul>
-<p>NCBI are the repository of record for published biological sequence data, and provide several BLAST databases, including one that contains all publicly-available 16S sequence data. You will use NCBI-BLAST, with your isolate’s 16S sequence as the query, to search this database.</p>
+<p>NCBI are the repository of record for published biological sequence data, and provide several BLAST databases, including one that contains all publicly-available 16S sequence data. You will use the <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">NCBI-BLAST webservice</a>, with your isolate’s 16S sequence as the query, to search this database.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="BLAST reports a number of useful measures for each match">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -315,9 +316,18 @@ Questions
 <h3 data-number="3.3.1" class="anchored" data-anchor-id="analysing-your-data-1"><span class="header-section-number">3.3.1</span> Analysing your data</h3>
 <ol type="1">
 <li>Go to the <a href="https://www.arb-silva.de/aligner">SILVA ACT</a> (Alignment, Classification, and Tree) service</li>
+</ol>
+<p><img src="assets/images/silva_16s/01-silva.png" class="img-fluid"></p>
+<ol start="2" type="1">
 <li>Upload your <code>isolate_16S.fasta</code> file, or copy and paste the contents of the file into the box marked <code>Input data</code>.</li>
 <li>Check the box marked <code>Search and classify</code>, but leave all the other options as they are.</li>
+</ol>
+<p><img src="assets/images/silva_16s/02-silva.png" class="img-fluid"></p>
+<ol start="4" type="1">
 <li>Enter a name for your job in the field marked <code>Job Name:</code> (e.g.&nbsp;“<code>BM432 Block A workshop</code>” or “<code>blood isolate</code>”)</li>
+</ol>
+<p><img src="assets/images/silva_16s/03-silva.png" class="img-fluid"></p>
+<ol start="5" type="1">
 <li>Click on the <code>Run Tool</code> button and wait for the result to appear.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -333,8 +343,9 @@ Note
 <p>While the job is waiting it will appear in the <code>Aligner Taskmanager</code> as <em>Queued</em>, then <em>Starting</em>, then <em>Processing</em>. It may take a couple of minutes to produce a result.</p>
 </div>
 </div>
+<p><img src="assets/images/silva_16s/04-silva.png" class="img-fluid"></p>
 <ol start="6" type="1">
-<li>Select your result in the <code>Alignment Result Table</code>, and click on <code>Display Classification</code></li>
+<li>When the job is complete, select your result in the <code>Alignment Result Table</code>, and click on <code>Display Classification</code></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -349,9 +360,7 @@ Tip
 <p>You may need to adjust the widths of the headers in the result table to see the full classification</p>
 </div>
 </div>
-<ol start="7" type="1">
-<li>Click on <code>Export to CSV</code> to download the classification result. You can view this in <code>Excel</code> or in a plain text editor.</li>
-</ol>
+<p><img src="assets/images/silva_16s/05-silva.png" class="img-fluid"> 7. Click on <code>Export to CSV</code> (lower left of <code>Alignment Result Table</code>) to download the classification result. You can view this file in <code>Excel</code> or in a plain text editor.</p>
 <div class="callout callout-style-default callout-important callout-titled" title="Questions">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
