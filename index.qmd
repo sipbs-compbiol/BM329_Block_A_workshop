@@ -2,14 +2,14 @@
 
 Welcome to the BM329 (Biomedical Microbiology) Block A Microbial Identification workshop for {{< var ay >}}.
 
-This year is the first presentation of this particular material, and we would be very grateful to hear feedback [by email]({{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
+This year is the first presentation of this workshop material, and we would be very grateful to hear feedback [by email]({{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
 
 ## Overview
 
 The workshop asks you to carry out common microbial identification analyses for a sequenced bacterial isolate, to determine its likely identity. You will be using online bioinformatics services to do this.
 
 ::: { .callout-warning title="Important Note"}
-There is new material in this workshop that is not covered in lectures, and this material is examinable. Please be sure to read the text in the expandable callout boxes, as well as that for the workshop, to be sure you have understood the topic and obtain full value from the exercise.
+There is new material in this workshop that is not covered in lectures, and this material is examinable. Please take care to read the text in the expandable callout boxes, as well as that for the workshop, to be sure you have understood the topic and obtain full value from the exercise.
 
 The workshop material will remain live online for the duration of BM329, and you can revisit it whenever you wish, for practice or revision.
 :::
@@ -21,9 +21,9 @@ The workshop material will remain live online for the duration of BM329, and you
 By the end of this workshop, students will be able to:
 
 - Obtain an identification for bacterial isolate from its 16S sequence, using public bioinformatics 16S sequence-matching services
-- Obtain an identification for a genome sequenced bacterial isolate from its assembled genome sequence, using a range of techniques, _via_ public bioinformatics services
-- Interpret sequence-based bacterial taxonomy assignments in the context of LPSN (the List of Prokaryotic names with Standing in Nomenclature), the arbiter of bacterial nomenclature
-- Compare and make an informed judgement between alternative taxonomic assignments for bacteria made using different computational approaches and databases.
+- Obtain an identification for a bacterial isolate from its assembled draft genome sequence, using a range of techniques, _via_ public bioinformatics services
+- Interpret sequence-based bacterial taxonomy assignments in the context of [LPSN (the List of Prokaryotic names with Standing in Nomenclature)](https://www.bacterio.net/), the arbiter of bacterial nomenclature
+- Compare, and make an informed judgement between, alternative taxonomic assignments for the same isolate made using different computational approaches and databases.
 
 ## Assessment
 

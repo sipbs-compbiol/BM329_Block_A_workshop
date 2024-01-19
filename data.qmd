@@ -51,26 +51,26 @@ FASTA files are a _plain text_ format. You can open them in an editor like `note
 :::
 
 ::: { .callout-warning }
-Avoid opening FASTA files in Word or other word-processing software. This software can insert hidden characters which corrupt the data and make it unusable for analysis.
+Avoid opening FASTA files in Word or other word-processing software. This software can insert hidden characters which corrupt the data and make it unusable for analysis. If you save your sequence as a Word file it will be unreadable by bioinformatics programs.
 :::
 
 ## Draft genome sequence
 
-Your isolate's genome is not entirely complete, and is not in one single contiguous piece - therefore it is a _draft_ genome. Rather, it is in 41 _contigs_ (contiguous sequences) - sections of the genome. The contigs are not in order which means that, on the real genome, the second contig may not follow the first (and so on), and the first contig may not be where the genome "starts".
+Your isolate's genome is not entirely complete, and is not in one single contiguous piece - therefore it is a _draft_ genome. Instead, it is in 41 _contigs_ (contiguous sequences) - sections of the genome. The contigs are not in order which means that, on the real genome, the second contig may not follow the first (and so on), and the first contig may not be where the genome "starts".
 
-The contigs are described in the single [`isolate_genome.fasta`](assets/data/isolate_genome.fasta) file: one sequence per contig. Taken together, the total sequenced genome length is 5,116,355 bases, and the genome has a GC% content of 53.5%.
+The contigs are described in the [`isolate_genome.fasta`](assets/data/isolate_genome.fasta) file: one sequence per contig. Taken together, the total sequenced genome length is 5,116,355 bases, and the genome has a GC% content of 53.5%.
 
 ## 16S sequence
 
-16S ribosomal RNA (16S rRNA) is a highly-optimised, essential component of bacterial SSU (small subunit) ribosomes. Because it is essential, and its function in protein synthesis is central to correct operation of a cell, its biological sequence is highly constrained (it is unlikely that a change in the sequence will enhance or be neutral to function). This has two main implications that make it useful for evolutionary analysis and microbial identification.
+[16S ribosomal RNA (16S rRNA)](https://en.wikipedia.org/wiki/16S_ribosomal_RNA) is an evolutionarily highly-optimised, essential component of bacterial SSU (small subunit) ribosomes. Because it is essential, and its function in protein synthesis is central to correct operation of the cell, its biological sequence is highly constrained ([it is unlikely that a change in the sequence will enhance or be neutral to function](https://en.wikipedia.org/wiki/Negative_selection_(natural_selection))). This has two main implications that make it useful for evolutionary analysis and microbial identification.
 
-- The 16S sequence is similar enough to be recognisable across all prokaryotes
+- The 16S sequence is similar enough to be recognisable in all prokaryotes
 - The 16S sequence is usually most similar in organisms that share a recent common ancestor, and less similar in organisms that share a more distant common ancestor.
 
 These properties enable the 16S rRNA sequence to be used to reconstruct evolutionary histories of prokaryotes, including the landmark paper that defined Archaea as a new domain of life (@Woese1990-mo). Several online reference databases with curated 16S sequence data are commonly used to enable bioinformatic identification of organisms.
 
 ::: { .callout-note }
-These properties also make 16S rRNA useful for identifying which bacteria are present in complex communities (microbiome analyses).
+The properties noted above also make 16S rRNA useful for identifying which bacteria are present in complex communities: microbiome analyses (@Johnson2019-rb)).
 
 The similarity of 16S sequences across all bacteria mean that a single set of primers (_universal primers_) can be used to amplify most 16S bacterial genes in a sample using PCR.
 
@@ -84,10 +84,10 @@ Sequencing the amplified 16S genes with [high-throughput sequencing](https://www
 
 - Whole-genome sequencing is practical, inexpensive, and provides more information, including the 16S sequence.
   - Amplifying a variable subregion of 16S provides about 300bp of information, sequencing the full 16S gene about 1500bp, and sequencing a genome between 1,500,000bp and 12,000,000bp (depending on organism)
-- Some distinct species share identical 16S sequences
-- Some organisms/species possess multiple distinct 16S sequences
-- There is no universal level of similarity (percentage identity) between 16S sequences that always corresponds to a taxonomic division
-- 16S databases contain many sequences that are incomplete, contain errors, or are annotated with the wrong taxonomic identity
+- Some distinct species share identical 16S sequences (@Edgar2018-qi)
+- Some organisms/species possess multiple distinct 16S sequences (@Edgar2018-qi)
+- There is no universal level of similarity (percentage identity) between 16S sequences that always corresponds to a taxonomic division (@Edgar2018-cm)
+- 16S databases contain many sequences that are incomplete, contain errors, or are annotated with the wrong taxonomic identity (@Edgar2018-qb)
 :::
 
 The 16S sequence for your isolate has been identified from the genome sequence and is described in the [`isolate_16S.fasta`](assets/data/isolate_16S.fasta) FASTA file.
