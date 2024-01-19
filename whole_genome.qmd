@@ -6,7 +6,29 @@ In this part of the workshop, you will use public resources for whole-genome ide
 Please ensure that you have downloaded the genome file for your isolate (`isolate_genome.fasta`) to a suitable location on your computer.
 :::
 
-## TYGS
+## The Type (Strain) Genome Server (TYGS)
+
+The [Type (Strain) Genome Server (TYGS)](https://tygs.dsmz.de/) is provided by the [Liebniz Institute DSMZ](https://www.dsmz.de/), the German collection of Microbes and Cell Cultures. It provides genome-based classification of organisms by comparison against a reference database of over 20,000 sequenced bacterial _type strains_. TYGS is tightly-coupled to the authoritative [LPSN (List of Prokaryotic names with Standing in Nomenclature) database](https://www.bacterio.net/), to ensure nomenclaturally-correct identification
+
+::: { .callout-warning collapse="true"}
+## Type Strains
+
+A [*type strain*](https://www.atcc.org/microbe-products/type-strains#t=productTab&numberOfResults=24) is the representative of a taxon: the nomenclatural "type" on which the definition of a taxon (such as species) is based. Type strains must be deposited in at least two separate public culture collections, in different countries.
+
+Not all taxa (in particular _Candidate phyla_) have type strains. It is a requirement for type strains that the organism is grown and cultured, as it cannot otherwise be placed in a culture collection. But it has been estimated that not only are the majority of bacteria and archaea so far uncultured, but they may even be unculturable in the laboratory (@Hofer2018).
+:::
+
+::: { .callout-note collapse="true"}
+## How TYGS Classification Works
+
+TYGS takes a prokaryotic genome as input, and assigns a taxonomic identity after a series of pairwise genome comparisons.
+
+First, the input genome is compared to the type strain database using an approach called MASH (@Ondov2016). The ten type strain genomes, and the ten most closely related type strains identified by 16S rDNA gene (extracted automatically from the input) similarity. 
+
+This set of 20 type strain genomes is then used to find the best 50 matching type strains. A phylogenetic tree is then constructed using the Genome BLAST Distance Phylogeny approach (GBDP, @Henz2005-th), and the resulting distances used to determine the 10 closest type strain genomes for each of the user genomes. The between-genome distances for this are calculated using digital DNA-DNA hybridisation (dDDH, @Meier-Kolthoff2013-ps).
+
+TYGS compiles classification output into a PDF file, and presents the resulting phylogeny on the TYGS website. All results tables and trees can be downloaded in shareable formats.
+:::
 
 - Go to the [TYGS](https://tygs.dsmz.de/) server
 
@@ -31,17 +53,20 @@ This may take some time (maybe over an hour, depending on server load!), and may
 **Please move on to the next section while you are waiting.**
 :::
 
-- **When you get the result confirmation email, inspect the PDF** 
+- When you get the result confirmation email, download and inspect the result PDF, and examine the whole-genome tree.
+
+![](assets/images/TYGS/05-tygs.png)
 
 ::: { .callout-important title="Questions"}
 1. What is the predicted taxonomic classification of your isolate's genome?
 2. How similar is your isolate's genome to the closest match? (the $d_4$ result is the dDDH (digital DNA-DNA hybridisation) score)
-3. What is your current opinion about the identity of your isolate? How confident are you in the identification?
+3. What are the most closely-related species and genera in the whole-genome tree? Is the distribution of genera consistent with what was previously known about _Ochrobactrum_ and _Brucella_ taxonomy?
+4. What is your current opinion about the identity of your isolate? How confident are you in the identification?
 :::
 
 ## genomeRxiv
 
-[`genomeRxiv`](http://genomerxiv.cs.vt.edu/) is a new appraoch that promises to identify and classify prokaryotic genomes quickly and accurately into categories called LINgroups (LIN: Life Identification Number). LINgroups are a taxonomy-independent, quantitative categorisation scheme that organises genome sequences by similarity in multidimensional "space". These categorisations can then be used to relate alternative taxonomic assignments, and other annotations, to each other (@Mazloom2022-uv).
+[`genomeRxiv`](http://genomerxiv.cs.vt.edu/) is a recently-developed approach to bacterial classification that promises to identify and classify prokaryotic genomes quickly and accurately into categories called LINgroups (LIN: Life Identification Number). LINgroups are a taxonomy-independent, quantitative categorisation scheme that organises genome sequences by similarity in multidimensional "space". These categorisations can then be used to relate alternative taxonomic assignments, and other annotations, to each other (@Pritchard2022-ti). 
 
 ::: { .callout-note collapse="true" }
 ## How `genomeRxiv` works
@@ -50,9 +75,11 @@ This may take some time (maybe over an hour, depending on server load!), and may
 
 ![Example map grid references: point A has grid reference 970 (Easting) and 280 (Northing) as _x_-_y_ co-ordinates, so the total reference is 970280. Similarly, point B is at 989319, and point C at 005255. All points in the map, however large or small, are uniquely assigned to a discrete location and, by subdividing the map into smaller and smaller squares (longer and longer numbers) an arbitrary level of precision can be reached](assets/images/DarronGedge-HowToReadASixFigureGridReference-Screenshot.png)
 
-`genomeRxiv` compares input sequences to a reference database with a very fast bioinformatics algorithm (`sourmash`) to get a set of good matches, and then refines the match with a more precise but slower algorithm (`ANI`). `genomeRxiv` then assigns a LINgroup to the genome. The LINgroup is a string of numbers, analogous to a map co-ordinate. The shorter the LINgroup, the lower the resolution of identification (Phylum, Family, etc.), and the longer the LINgroup, the finer the resolution (species, subspecies, strain, etc.).
+`genomeRxiv` compares input sequences to a reference database with a very fast bioinformatics algorithm (`sourmash`) to get a set of good matches, and then refines the match with a more precise but slower algorithm (`ANI`). `genomeRxiv` then assigns a LINgroup to the genome (@Tian2021-xc). The LINgroup is a string of numbers, analogous to a map co-ordinate. The shorter the LINgroup, the lower the resolution of identification (Phylum, Family, etc.), and the longer the LINgroup, the finer the resolution (species, subspecies, strain, etc.).
 
 The first key difference between LINgroups and map co-ordinates is that LINgroups are not co-ordinates on a two-dimensional surface, but in many-dimensional space. The second is that a single number describes the location, rather than two numbers (the "Easting" and "Northing" of map co-ordinates. Finally, grid references represent a physical space (such as the surface of the Earth), and LINgroups represent "sequence space" - which is not physical (@Mazloom2022-uv).
+
+![Example arbitrary projection of 380 _Ralstonia solanacearum_ genomes into three dimensions, based on overall genome similarity. Each sphere is a single genome. The genomes can be clustered into groups of genomes that are more similar to each other than they are to other genomes in the dataset. These clusters are assigned different colours. Each genome, such as the one indicated, has a unique co-ordinate in this "sequence space."](assets/images/genomeRxiv/projection_of_ani_distances.png)
 
 Taxa are then defined by the volumes in space circumscribed by genomes which are examples of each taxon. When a new unknown genome is added, a LINgroup is assigned and - if it lies within a volume of space contained only by members of a single taxon (e.g. _E. coli_), the genome is assigned that taxon. 
 :::
