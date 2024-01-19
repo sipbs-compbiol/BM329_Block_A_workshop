@@ -14,8 +14,9 @@ BLAST is a bioinformatics tool developed by [NCBI (the National Center for Biote
 
 - [NCBI-BLAST webservice](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 - [NCBI-BLAST help pages](https://blast.ncbi.nlm.nih.gov/doc/blast-help/)
+- [How BLAST works](https://www.nlm.nih.gov/ncbi/workshops/2022-10_Basic-Web-BLAST/how-blast-works.html)
 
-NCBI are the repository of record for published biological sequence data, and provide several BLAST databases, including one that contains all publicly-available 16S sequence data. You will use NCBI-BLAST, with your isolate's 16S sequence as the query, to search this database. 
+NCBI are the repository of record for published biological sequence data, and provide several BLAST databases, including one that contains all publicly-available 16S sequence data. You will use the [NCBI-BLAST webservice](https://blast.ncbi.nlm.nih.gov/Blast.cgi), with your isolate's 16S sequence as the query, to search this database. 
 
 ::: { .callout-tip title="BLAST reports a number of useful measures for each match"}
 - Percent coverage: what proportion (percentage) of the _query_ is similar enough to the match that it has been aligned
@@ -66,22 +67,34 @@ NCBI do not manually curate (i.e. confirm sequence quality or correct identity) 
 ### Analysing your data
 
 1. Go to the [SILVA ACT](https://www.arb-silva.de/aligner) (Alignment, Classification, and Tree) service
+
+![](assets/images/silva_16s/01-silva.png)
+
 2. Upload your `isolate_16S.fasta` file, or copy and paste the contents of the file into the box marked `Input data`.
 3. Check the box marked `Search and classify`, but leave all the other options as they are.
+
+![](assets/images/silva_16s/02-silva.png)
+
 4. Enter a name for your job in the field marked `Job Name:` (e.g. "`BM432 Block A workshop`" or "`blood isolate`")
+
+![](assets/images/silva_16s/03-silva.png)
+
 5. Click on the `Run Tool` button and wait for the result to appear.
 
 ::: { .callout-note }
 While the job is waiting it will appear in the `Aligner Taskmanager` as _Queued_, then _Starting_, then _Processing_. It may take a couple of minutes to produce a result.
 :::
 
-6. Select your result in the `Alignment Result Table`, and click on `Display Classification` 
+![](assets/images/silva_16s/04-silva.png)
+
+6. When the job is complete, select your result in the `Alignment Result Table`, and click on `Display Classification` 
 
 ::: { .callout-tip }
 You may need to adjust the widths of the headers in the result table to see the full classification
 :::
 
-7. Click on `Export to CSV` to download the classification result. You can view this in `Excel` or in a plain text editor.
+![](assets/images/silva_16s/05-silva.png)
+7. Click on `Export to CSV` (lower left of `Alignment Result Table`) to download the classification result. You can view this file in `Excel` or in a plain text editor.
 
 ::: { .callout-important title="Questions"}
 1. What is the taxonomic identity of the [last common ancestor (LCA)](https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/) that SILVA assigns to your isolate (`lca_tax_slv` or `LCA tax. SILVA` column)?
