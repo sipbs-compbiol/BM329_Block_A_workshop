@@ -48,7 +48,7 @@ This may take some time (maybe over an hour, depending on server load!), and may
 
 `genomeRxiv` works in a similar way to [map grid references](https://en.wikipedia.org/wiki/Projected_coordinate_system). 
 
-![Example map grid references: point A has grid reference 970 (Easting) and 280 (Northing) as _x_-_y_ co-ordinates, so the total reference is 970280. Similarly, point B is at 989319, and point C at 005255. All points in the map, however large or small, are uniquely assigned to a discrete location and, by subdividing the map into smaller and smaller squares (longer and longer numbers) an arbitrary level of precision can be reached](assets/images/DarronGedge-HowToReadASixFigureGridReference-Screenshot)
+![Example map grid references: point A has grid reference 970 (Easting) and 280 (Northing) as _x_-_y_ co-ordinates, so the total reference is 970280. Similarly, point B is at 989319, and point C at 005255. All points in the map, however large or small, are uniquely assigned to a discrete location and, by subdividing the map into smaller and smaller squares (longer and longer numbers) an arbitrary level of precision can be reached](assets/images/DarronGedge-HowToReadASixFigureGridReference-Screenshot.png)
 
 `genomeRxiv` compares input sequences to a reference database with a very fast bioinformatics algorithm (`sourmash`) to get a set of good matches, and then refines the match with a more precise but slower algorithm (`ANI`). `genomeRxiv` then assigns a LINgroup to the genome. The LINgroup is a string of numbers, analogous to a map co-ordinate. The shorter the LINgroup, the lower the resolution of identification (Phylum, Family, etc.), and the longer the LINgroup, the finer the resolution (species, subspecies, strain, etc.).
 
