@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -197,6 +216,53 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Although we have referred to authoritative sources there is, in fact, no offical classification of prokaryotes (<span class="citation" data-cites="Tindall1999-qe">Tindall (<a href="references.html#ref-Tindall1999-qe" role="doc-biblioref">1999</a>)</span>). Also, the terms <em>nomenclature</em>, <em>taxonomy</em>, and <em>phylogeny</em> are not interchangeable.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Understanding the difference">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Understanding the difference
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>phylogeny</strong>: A <em>phylogeny</em> is the evolutionary history of a set of organisms, or a model (such as a phylogentic tree) representing that history</li>
+<li><strong>taxonomy</strong>: A <em>taxonomy</em> is a scheme for ordering objects into groups or classes, or the rules for doing so</li>
+<li><strong>nomenclature</strong>: <em>Nomenclature</em> is the set of names assigned to groups in a taxonomy, or the set of rules for doing so</li>
+</ul>
+</div>
+</div>
+<p>We do not know the “true” evolutionary histories of organisms, so the <em>phylogenies</em> we reconstruct as scientists are estimates - sometimes very precise estimates! - of evolutionary history.</p>
+<p>The <em>phylogenies</em> we construct allow us to make decisions about how to organise organisms into a <em>taxonomy</em>: groups of organisms (taxa) that comprise species, genera, phyla, and so on.</p>
+<p>The names we give to taxa are governed by the rules of <em>nomenclature</em>. Those names are regulated by the <a href="https://the-icsp.org/index.php/code-of-nomenclatur">International Code of Nomenclature of Prokaryotes (ICNP)</a>. This document is produced by the <a href="https://the-icsp.org/index.php">International Committee on Systematics of Prokaryotes (ICSP)</a>, a group of about 35 scientists who compose the rules by which bacteria are named.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="ICSP Do Not Have a Taxonomic Opinion">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+ICSP Do Not Have a Taxonomic Opinion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The ICSP do not decide which organisms go into any particular taxon (genus, species, etc.) - scientific opinion is ever-changing in this area. ICSP, through the ICNP, only decide what is a validly published name. The name of a taxon is validly published, and therefore <em>has standing in nomenclature</em>, only if certain criteria are met.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="The [LPSN](https://www.bacterio.net/) is the authoritative database of validy-published names for prokaryotes.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The <a href="https://www.bacterio.net/">LPSN</a> is the authoritative database of validy-published names for prokaryotes.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 <section id="investigating-your-classification-at-lpsn" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="investigating-your-classification-at-lpsn"><span class="header-section-number">6.1</span> Investigating your classification at LPSN</h2>
 <ul>
@@ -244,7 +310,7 @@ Questions
 </div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -253,13 +319,14 @@ What does “correct name” mean in a taxonomic context?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The precise meaning of “correct name” in this context is provided in a <a href="https://lpsn.dsmz.de/text/glossary">glossary at LPSN</a>. The key points in that text are:</p>
 <ul>
 <li>Any taxon may have only one <em>correct</em> name. This is usually the earliest validly published, legitimate name.</li>
 <li>The LPSN selects certain taxon names as <em>correct</em> names. If more than one option is available, then the LPSN’s choice reflects only <em>one</em> of the taxonomic opinions expressed in the literature.</li>
-<li>Valid names representing other taxonomic opinions are given <em>synonym</em> status.</li>
+<li>The <em>correct</em> name for an organism should be used in the literature.</li>
+<li>Other valid names are given <em>synonym</em> status.</li>
 <li>Other scientists may express distinct taxonomic opinions and are permitted to do so, by using a <em>synonym</em>.</li>
 </ul>
 <p><strong>The term <em>correct</em> is therefore used in a technical sense, in a taxonomic context. The existence of a <em>correct</em> name for a taxon does not imply that other names (<em>synonyms</em>) are invalid or cannot be used.</strong></p>
@@ -288,6 +355,11 @@ Questions
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Tindall1999-qe" class="csl-entry" role="listitem">
+Tindall, B J. 1999. <span>“Misunderstanding the Bacteriological Code.”</span> <em>Int. J. Syst. Bacteriol.</em> 49 Pt 3 (3): 1313–16.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

@@ -194,7 +194,7 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#tygs" id="toc-tygs" class="nav-link active" data-scroll-target="#tygs"><span class="header-section-number">5.1</span> TYGS</a></li>
+  <li><a href="#the-type-strain-genome-server-tygs" id="toc-the-type-strain-genome-server-tygs" class="nav-link active" data-scroll-target="#the-type-strain-genome-server-tygs"><span class="header-section-number">5.1</span> The Type (Strain) Genome Server (TYGS)</a></li>
   <li><a href="#genomerxiv" id="toc-genomerxiv" class="nav-link" data-scroll-target="#genomerxiv"><span class="header-section-number">5.2</span> genomeRxiv</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/sipbs-compbiol/BM329_Block_A_workshop/edit/main/whole_genome.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/sipbs-compbiol/BM329_Block_A_workshop/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -233,8 +233,45 @@ Important
 <p>Please ensure that you have downloaded the genome file for your isolate (<code>isolate_genome.fasta</code>) to a suitable location on your computer.</p>
 </div>
 </div>
-<section id="tygs" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="tygs"><span class="header-section-number">5.1</span> TYGS</h2>
+<section id="the-type-strain-genome-server-tygs" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="the-type-strain-genome-server-tygs"><span class="header-section-number">5.1</span> The Type (Strain) Genome Server (TYGS)</h2>
+<p>The <a href="https://tygs.dsmz.de/">Type (Strain) Genome Server (TYGS)</a> is provided by the <a href="https://www.dsmz.de/">Liebniz Institute DSMZ</a>, the German collection of Microbes and Cell Cultures. It provides genome-based classification of organisms by comparison against a reference database of over 20,000 sequenced bacterial <em>type strains</em>. TYGS is tightly-coupled to the authoritative <a href="https://www.bacterio.net/">LPSN (List of Prokaryotic names with Standing in Nomenclature) database</a>, to ensure nomenclaturally-correct identification</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Type Strains
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A <a href="https://www.atcc.org/microbe-products/type-strains#t=productTab&amp;numberOfResults=24"><em>type strain</em></a> is the representative of a taxon: the nomenclatural “type” on which the definition of a taxon (such as species) is based. Type strains must be deposited in at least two separate public culture collections, in different countries.</p>
+<p>Not all taxa (in particular <em>Candidate phyla</em>) have type strains. It is a requirement for type strains that the organism is grown and cultured, as it cannot otherwise be placed in a culture collection. But it has been estimated that not only are the majority of bacteria and archaea so far uncultured, but they may even be unculturable in the laboratory (<span class="citation" data-cites="Hofer2018">Hofer (<a href="references.html#ref-Hofer2018" role="doc-biblioref">2018</a>)</span>).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+How TYGS Classification Works
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>TYGS takes a prokaryotic genome as input, and assigns a taxonomic identity after a series of pairwise genome comparisons.</p>
+<p>First, the input genome is compared to the type strain database using an approach called MASH (<span class="citation" data-cites="Ondov2016">Ondov et al. (<a href="references.html#ref-Ondov2016" role="doc-biblioref">2016</a>)</span>). The ten type strain genomes, and the ten most closely related type strains identified by 16S rDNA gene (extracted automatically from the input) similarity.</p>
+<p>This set of 20 type strain genomes is then used to find the best 50 matching type strains. A phylogenetic tree is then constructed using the Genome BLAST Distance Phylogeny approach (GBDP, <span class="citation" data-cites="Henz2005-th">Henz et al. (<a href="references.html#ref-Henz2005-th" role="doc-biblioref">2005</a>)</span>), and the resulting distances used to determine the 10 closest type strain genomes for each of the user genomes. The between-genome distances for this are calculated using digital DNA-DNA hybridisation (dDDH, <span class="citation" data-cites="Meier-Kolthoff2013-ps">Meier-Kolthoff et al. (<a href="references.html#ref-Meier-Kolthoff2013-ps" role="doc-biblioref">2013</a>)</span>).</p>
+<p>TYGS compiles classification output into a PDF file, and presents the resulting phylogeny on the TYGS website. All results tables and trees can be downloaded in shareable formats.</p>
+</div>
+</div>
+</div>
 <ul>
 <li>Go to the <a href="https://tygs.dsmz.de/">TYGS</a> server</li>
 </ul>
@@ -267,8 +304,9 @@ Warning
 </div>
 </div>
 <ul>
-<li><strong>When you get the result confirmation email, inspect the PDF</strong></li>
+<li>When you get the result confirmation email, download and inspect the result PDF, and examine the whole-genome tree.</li>
 </ul>
+<p><img src="assets/images/TYGS/05-tygs.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-important callout-titled" title="Questions">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -282,6 +320,7 @@ Questions
 <ol type="1">
 <li>What is the predicted taxonomic classification of your isolate’s genome?</li>
 <li>How similar is your isolate’s genome to the closest match? (the <span class="math inline">\(d_4\)</span> result is the dDDH (digital DNA-DNA hybridisation) score)</li>
+<li>What are the most closely-related species and genera in the whole-genome tree? Is the distribution of genera consistent with what was previously known about <em>Ochrobactrum</em> and <em>Brucella</em> taxonomy?</li>
 <li>What is your current opinion about the identity of your isolate? How confident are you in the identification?</li>
 </ol>
 </div>
@@ -289,9 +328,9 @@ Questions
 </section>
 <section id="genomerxiv" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="genomerxiv"><span class="header-section-number">5.2</span> genomeRxiv</h2>
-<p><a href="http://genomerxiv.cs.vt.edu/"><code>genomeRxiv</code></a> is a new appraoch that promises to identify and classify prokaryotic genomes quickly and accurately into categories called LINgroups (LIN: Life Identification Number). LINgroups are a taxonomy-independent, quantitative categorisation scheme that organises genome sequences by similarity in multidimensional “space”. These categorisations can then be used to relate alternative taxonomic assignments, and other annotations, to each other (<span class="citation" data-cites="Mazloom2022-uv">Mazloom et al. (<a href="references.html#ref-Mazloom2022-uv" role="doc-biblioref">2022</a>)</span>).</p>
+<p><a href="http://genomerxiv.cs.vt.edu/"><code>genomeRxiv</code></a> is a recently-developed approach to bacterial classification that promises to identify and classify prokaryotic genomes quickly and accurately into categories called LINgroups (LIN: Life Identification Number). LINgroups are a taxonomy-independent, quantitative categorisation scheme that organises genome sequences by similarity in multidimensional “space”. These categorisations can then be used to relate alternative taxonomic assignments, and other annotations, to each other (<span class="citation" data-cites="Pritchard2022-ti">Pritchard et al. (<a href="references.html#ref-Pritchard2022-ti" role="doc-biblioref">2022</a>)</span>).</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -300,7 +339,7 @@ How <code>genomeRxiv</code> works
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><code>genomeRxiv</code> works in a similar way to <a href="https://en.wikipedia.org/wiki/Projected_coordinate_system">map grid references</a>.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -309,8 +348,14 @@ How <code>genomeRxiv</code> works
 <figcaption class="figure-caption">Example map grid references: point A has grid reference 970 (Easting) and 280 (Northing) as <em>x</em>-<em>y</em> co-ordinates, so the total reference is 970280. Similarly, point B is at 989319, and point C at 005255. All points in the map, however large or small, are uniquely assigned to a discrete location and, by subdividing the map into smaller and smaller squares (longer and longer numbers) an arbitrary level of precision can be reached</figcaption>
 </figure>
 </div>
-<p><code>genomeRxiv</code> compares input sequences to a reference database with a very fast bioinformatics algorithm (<code>sourmash</code>) to get a set of good matches, and then refines the match with a more precise but slower algorithm (<code>ANI</code>). <code>genomeRxiv</code> then assigns a LINgroup to the genome. The LINgroup is a string of numbers, analogous to a map co-ordinate. The shorter the LINgroup, the lower the resolution of identification (Phylum, Family, etc.), and the longer the LINgroup, the finer the resolution (species, subspecies, strain, etc.).</p>
+<p><code>genomeRxiv</code> compares input sequences to a reference database with a very fast bioinformatics algorithm (<code>sourmash</code>) to get a set of good matches, and then refines the match with a more precise but slower algorithm (<code>ANI</code>). <code>genomeRxiv</code> then assigns a LINgroup to the genome (<span class="citation" data-cites="Tian2021-xc">Tian et al. (<a href="references.html#ref-Tian2021-xc" role="doc-biblioref">2021</a>)</span>). The LINgroup is a string of numbers, analogous to a map co-ordinate. The shorter the LINgroup, the lower the resolution of identification (Phylum, Family, etc.), and the longer the LINgroup, the finer the resolution (species, subspecies, strain, etc.).</p>
 <p>The first key difference between LINgroups and map co-ordinates is that LINgroups are not co-ordinates on a two-dimensional surface, but in many-dimensional space. The second is that a single number describes the location, rather than two numbers (the “Easting” and “Northing” of map co-ordinates. Finally, grid references represent a physical space (such as the surface of the Earth), and LINgroups represent “sequence space” - which is not physical (<span class="citation" data-cites="Mazloom2022-uv">Mazloom et al. (<a href="references.html#ref-Mazloom2022-uv" role="doc-biblioref">2022</a>)</span>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/genomeRxiv/projection_of_ani_distances.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Example arbitrary projection of 380 <em>Ralstonia solanacearum</em> genomes into three dimensions, based on overall genome similarity. Each sphere is a single genome. The genomes can be clustered into groups of genomes that are more similar to each other than they are to other genomes in the dataset. These clusters are assigned different colours. Each genome, such as the one indicated, has a unique co-ordinate in this “sequence space.”</figcaption>
+</figure>
+</div>
 <p>Taxa are then defined by the volumes in space circumscribed by genomes which are examples of each taxon. When a new unknown genome is added, a LINgroup is assigned and - if it lies within a volume of space contained only by members of a single taxon (e.g.&nbsp;<em>E. coli</em>), the genome is assigned that taxon.</p>
 </div>
 </div>
@@ -385,8 +430,26 @@ Consider your final evaluation
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Henz2005-th" class="csl-entry" role="listitem">
+Henz, Stefan R, Daniel H Huson, Alexander F Auch, Kay Nieselt-Struwe, and Stephan C Schuster. 2005. <span>“Whole-Genome Prokaryotic Phylogeny.”</span> <em>Bioinformatics</em> 21 (10): 2329–35.
+</div>
+<div id="ref-Hofer2018" class="csl-entry" role="listitem">
+Hofer, Ursula. 2018. <span>“The Majority Is Uncultured.”</span> <em>Nature Reviews Microbiology</em> 16 (12): 716–17. <a href="https://doi.org/10.1038/s41579-018-0097-x">https://doi.org/10.1038/s41579-018-0097-x</a>.
+</div>
 <div id="ref-Mazloom2022-uv" class="csl-entry" role="listitem">
 Mazloom, Reza, Leighton Pritchard, C Titus Brown, Boris A Vinatzer, and Lenwood S Heath. 2022. <span>“<span>LINgroups</span> as a Principled Approach to Compare and Integrate Multiple Bacterial Taxonomies.”</span> In <em>Proceedings of the 13th <span>ACM</span> International Conference on Bioinformatics, Computational Biology and Health Informatics</em>. New York, NY, USA: ACM.
+</div>
+<div id="ref-Meier-Kolthoff2013-ps" class="csl-entry" role="listitem">
+Meier-Kolthoff, Jan P, Alexander F Auch, Hans-Peter Klenk, and Markus Göker. 2013. <span>“Genome Sequence-Based Species Delimitation with Confidence Intervals and Improved Distance Functions.”</span> <em>BMC Bioinformatics</em> 14 (1): 60.
+</div>
+<div id="ref-Ondov2016" class="csl-entry" role="listitem">
+Ondov, Brian D., Todd J. Treangen, Páll Melsted, Adam B. Mallonee, Nicholas H. Bergman, Sergey Koren, and Adam M. Phillippy. 2016. <span>“Mash: Fast Genome and Metagenome Distance Estimation Using MinHash.”</span> <em>Genome Biology</em> 17 (1). <a href="https://doi.org/10.1186/s13059-016-0997-x">https://doi.org/10.1186/s13059-016-0997-x</a>.
+</div>
+<div id="ref-Pritchard2022-ti" class="csl-entry" role="listitem">
+Pritchard, Leighton, C Titus Brown, Bailey Harrington, Lenwood S Heath, N Tessa Pierce-Ward, and Boris A Vinatzer. 2022. <span>“Could a Focus on the <span>‘Why’</span> of Taxonomy Help Taxonomy Better Respond to the Needs of Science and Society?”</span> <em>Front. Microbiol.</em> 13 (May): 887310.
+</div>
+<div id="ref-Tian2021-xc" class="csl-entry" role="listitem">
+Tian, Long, Reza Mazloom, Lenwood S Heath, and Boris A Vinatzer. 2021. <span>“<span>LINflow</span>: A Computational Pipeline That Combines an Alignment-Free with an Alignment-Based Method to Accelerate Generation of Similarity Matrices for Prokaryotic Genomes.”</span> <em>PeerJ</em> 9 (e10906): e10906.
 </div>
 </div>
 </section>
