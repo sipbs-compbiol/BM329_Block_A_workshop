@@ -1,5 +1,26 @@
 # LPSN: the List of Prokaryotic names with Standing in Nomenclature
 
+Although we have referred to authoritative sources there is, in fact, no offical classification of prokaryotes (@Tindall1999-qe). Also, the terms _nomenclature_, _taxonomy_, and _phylogeny_ are not interchangeable.
+
+::: { .callout-tip title="Understanding the difference"}
+- **phylogeny**: A _phylogeny_ is the evolutionary history of a set of organisms, or a model (such as a phylogentic tree) representing that history
+- **taxonomy**: A _taxonomy_ is a scheme for ordering objects into groups or classes, or the rules for doing so
+- **nomenclature**: _Nomenclature_ is the set of names assigned to groups in a taxonomy, or the set of rules for doing so
+:::
+
+We do not know the "true" evolutionary histories of organisms, so the _phylogenies_ we reconstruct as scientists are estimates - sometimes very precise estimates! - of evolutionary history.
+
+The _phylogenies_ we construct allow us to make decisions about how to organise organisms into a _taxonomy_: groups of organisms (taxa) that comprise species, genera, phyla, and so on.
+
+The names we give to taxa are governed by the rules of _nomenclature_. Those names are regulated by the [International Code of Nomenclature of Prokaryotes (ICNP)](https://the-icsp.org/index.php/code-of-nomenclatur). This document is produced by the [International Committee on Systematics of Prokaryotes (ICSP)](https://the-icsp.org/index.php), a group of about 35 scientists who compose the rules by which bacteria are named.
+
+::: { .callout-warning title="ICSP Do Not Have a Taxonomic Opinion"}
+The ICSP do not decide which organisms go into any particular taxon (genus, species, etc.) - scientific opinion is ever-changing in this area. ICSP, through the ICNP, only decide what is a validly published name. The name of a taxon is validly published, and therefore _has standing in nomenclature_, only if certain criteria are met.
+:::
+
+::: { .callout-note title="The [LPSN](https://www.bacterio.net/) is the authoritative database of validy-published names for prokaryotes." }
+:::
+
 ## Investigating your classification at LPSN
 
 - Go to the [LPSN](https://www.bacterio.net/) server
@@ -29,7 +50,8 @@ The precise meaning of "correct name" in this context is provided in a [glossary
 
 - Any taxon may have only one _correct_ name. This is usually the earliest validly published, legitimate name.
 - The LPSN selects certain taxon names as _correct_ names. If more than one option is available, then the LPSN's choice reflects only _one_ of the taxonomic opinions expressed in the literature.
-- Valid names representing other taxonomic opinions are given _synonym_ status.
+- The _correct_ name for an organism should be used in the literature.
+- Other valid names are given _synonym_ status.
 - Other scientists may express distinct taxonomic opinions and are permitted to do so, by using a _synonym_.
 
 **The term _correct_ is therefore used in a technical sense, in a taxonomic context. The existence of a _correct_ name for a taxon does not imply that other names (_synonyms_) are invalid or cannot be used.**

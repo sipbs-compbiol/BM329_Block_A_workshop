@@ -20,5 +20,5 @@ This year is the first presentation of this particular material, and we would be
 :::
 
 ::: { .callout-tip title="Completing the workshop" }
-Please now proceed to the BM329 MyPlace page and complete the formative questions, to finish the workshop.
+Please now proceed to the [BM329 MyPlace](https://classes.myplace.strath.ac.uk/course/view.php?id=21635) page and complete the formative questions, to finish the workshop.
 :::
