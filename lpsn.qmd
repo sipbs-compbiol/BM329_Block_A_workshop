@@ -62,5 +62,5 @@ The precise meaning of "correct name" in this context is provided in a [glossary
 ::: { .callout-important title="Questions"}
 1. How do the notes on this page reflect the controversy over naming of _Ochrobactrum_/_Brucella_ described in the [Introduction](intro.qmd)?
 2. Does the LPSN page affect your opinion about how you have classified your isolate?
-3. Finally, what is the taxonomic name you would use for your isolate?
+3. Finally, what is the taxonomic name you think is most appropriate for your isolate?
 :::
