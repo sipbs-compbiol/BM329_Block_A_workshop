@@ -103,7 +103,15 @@ The [`genomeRxiv` webservice](http://genomerxiv.cs.vt.edu/)  allows users to inp
 ::: { .callout-note }
 The genomeRxiv site may ask you to allow pop-ups. You should allow the pop-ups, as these contain the identification output you need.
 :::
-  
+
+::: { .callout-warning title="Interpreting genomeRxiv results"}
+genomeRxiv provides three classifications:
+
+- **Tentative LIN**: this is the LINgroup specific to the submitted genome. It may or may not match an existing, previously-assigned LINgroup.
+- **Closest Genome**: this is the LINgroup corresponding to the closest-matching genome in the genomeRxiv database. It is unlikely to match the LIN of the submitted genome exactly, even if it's a genome from the same species.
+- **Member LINgroups**: this is LINgroup that circumscribes a known taxon, as close to _and enclosing_ the submitted genome.
+:::
+
 ::: { .callout-important title="Questions"}
 1. What is the predicted taxonomic classification of your isolate's genome? (Check the `Member LINgroups` result)
 2. What is the taxonomic identity assigned to the most similar genome in the database?
