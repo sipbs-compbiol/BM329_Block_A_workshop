@@ -24,11 +24,11 @@ The ICSP do not decide which organisms go into any particular taxon (genus, spec
 ## Investigating your classification at LPSN
 
 - Go to the [LPSN](https://www.bacterio.net/) server
-- Enter the taxonomic classification you think should be assigned to your organism in the `Search taxonomy` field, and hit `Return`/`Enter`. The result should appear immediately.
+- Enter the species classification you think should be assigned to your organism in the `Search taxonomy` field, and hit `Return`/`Enter`. The result should appear immediately.
 
 ::: { .callout-important title="Questions"}
 1. What kind of taxonomic category does the name of your organism represent?
-2. What does the name mean, and what does it imply about the bacteria?
+2. What does the name mean, and what does it imply about the organism?
 3. Is the name you entered a validly published taxonomic name?
 4. What is the parent taxon for this name?
 :::
