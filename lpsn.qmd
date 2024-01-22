@@ -18,7 +18,7 @@ The names we give to taxa are governed by the rules of _nomenclature_. Those nam
 The ICSP do not decide which organisms go into any particular taxon (genus, species, etc.) - scientific opinion is ever-changing in this area. ICSP, through the ICNP, only decide what is a validly published name. The name of a taxon is validly published, and therefore _has standing in nomenclature_, only if certain criteria are met.
 :::
 
-::: { .callout-note title="The [LPSN](https://www.bacterio.net/) is the authoritative database of validy-published names for prokaryotes." }
+::: { .callout-note title="The [LPSN](https://www.bacterio.net/) is the authoritative database of validly-published names for prokaryotes." }
 :::
 
 ## Investigating your classification at LPSN
