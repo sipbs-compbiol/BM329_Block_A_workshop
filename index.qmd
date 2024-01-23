@@ -2,7 +2,7 @@
 
 Welcome to the BM329 (Biomedical Microbiology) Block A Microbial Identification workshop for {{< var ay >}}.
 
-This year is the first presentation of this workshop material, and we would be very grateful to hear feedback [by email]({{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
+This year is the first presentation of this workshop material, and we would be very grateful to hear feedback [by email](mailto:{{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
 
 ## Overview
 
@@ -27,4 +27,4 @@ By the end of this workshop, students will be able to:
 
 ## Assessment
 
-This workshop activity itself is not formally assessed although, as noted, all the material it contains is examinable. There is a formative assessment in the form of short answer questions on MyPlace, which you should complete as part of the workshop.
+This workshop activity itself is not formally assessed although, as noted, all the material it contains is examinable. There is a formative assessment in the form of short answer questions [on MyPlace](https://classes.myplace.strath.ac.uk/course/view.php?id=21635), which you should complete as part of the workshop.

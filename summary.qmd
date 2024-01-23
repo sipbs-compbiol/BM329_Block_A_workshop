@@ -16,7 +16,7 @@ In this workshop, you have:
 ::: { .callout-warning title="Thank you" }
 That's almost the end of the workshop. Thank you for participating. We hope you found it enjoyable and interesting, and that you now understand more about how bacterial classification works, in practice.
 
-This year is the first presentation of this particular material, and we would be very grateful to hear feedback [by email]({{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
+This year is the first presentation of this particular material, and we would be very grateful to hear feedback [by email](mailto:{{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
 :::
 
 ::: { .callout-tip title="Completing the workshop" }
