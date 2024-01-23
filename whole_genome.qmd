@@ -107,9 +107,9 @@ The genomeRxiv site may ask you to allow pop-ups. You should allow the pop-ups, 
 ::: { .callout-warning title="Interpreting genomeRxiv results"}
 genomeRxiv provides three classifications:
 
-- **Tentative LIN**: this is the LINgroup specific to the submitted genome. It may or may not match an existing, previously-assigned LINgroup.
-- **Closest Genome**: this is the LINgroup corresponding to the closest-matching genome in the genomeRxiv database. It is unlikely to match the LIN of the submitted genome exactly, even if it's a genome from the same species.
-- **Member LINgroups**: this is LINgroup that circumscribes a known taxon, as close to _and enclosing_ the submitted genome.
+- **Tentative LIN**: this is the LIN specific to the submitted genome. It may or may not match an existing, previously-assigned LIN.
+- **Closest Genome**: this is the LIN corresponding to the closest-matching genome in the genomeRxiv database. It is unlikely to match the LIN of the submitted genome exactly, even if it's a genome from the same species.
+- **Member LINgroups**: this is the LINgroup that circumscribes a known taxon, as close to _and enclosing_ the submitted genome, as possible. This is the likely identity of your isolate.
 :::
 
 ::: { .callout-important title="Questions"}
