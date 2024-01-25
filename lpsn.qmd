@@ -57,7 +57,7 @@ The precise meaning of "correct name" in this context is provided in a [glossary
 **The term _correct_ is therefore used in a technical sense, in a taxonomic context. The existence of a _correct_ name for a taxon does not imply that other names (_synonyms_) are invalid or cannot be used.**
 :::
 
-- Read the `Notes` section on the LPSN page. 
+- Read the `Notes` section on the LPSN page for _Ochrobactrum_ (the genus).
 
 ::: { .callout-important title="Questions"}
 1. How do the notes on this page reflect the controversy over naming of _Ochrobactrum_/_Brucella_ described in the [Introduction](intro.qmd)?
