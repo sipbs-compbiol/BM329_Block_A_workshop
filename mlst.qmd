@@ -40,10 +40,10 @@ Each marker sequence has many _variants_ (different sequences) within the taxon,
 
 ::: { .callout-important title="Questions"}
 1. What is the predicted taxon of your isolate's genome? What level of confidence does the pubMLST tool assign to this prediction (`Support` column)?
-2. Of the 53 ribosomal genes used to classify all bacteria, how many of the genes in your isolate had an _exact_ match in the database? Do you think this is a sufficient number for accurate taxonomic placement?
+2. How many marker genes in your isolate had an _exact_ match in the database? Do you think this is a sufficient number for accurate taxonomic placement? Why do you think that?
 3. How many different species in the database had an _exact_ match to markers in your isolate's genome?
 4. _Which_ species in the database had an _exact_ match to markers in your isolate's genome? What effect does this have on your confidence in your classification?
-5. What is your current opinion about the identity of your isolate? Have you revised your opinion due to the MLST analysis? How confident are you in the identification?
+5. What is your current opinion about the identity of your isolate? Have you revised your opinion from 16S analysis due to the MLST analysis? How confident are you in your current identification?
 :::
 
 ::: { .callout-tip title="Continue your identification"}
