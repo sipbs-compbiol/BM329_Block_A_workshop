@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "BM329 Workshop A: Microbial Identification",
     "section": "",
-    "text": "Preface to the 2023-24 BM329 Block A workshop\nWelcome to the BM329 (Biomedical Microbiology) Block A Microbial Identification workshop for 2023-24.\nThis year is the first presentation of this workshop material, and we would be very grateful to hear feedback by email or through the GitHub repository Issues page.",
+    "text": "Preface to the 2024-25 BM329 Block A workshop\nWelcome to the BM329 (Biomedical Microbiology) Block A Microbial Identification workshop for 2024-25.\nWe would be very grateful to hear feedback about this material by email or through the GitHub repository Issues page.",
     "crumbs": [
       "Preface to the {{< var ay >}} BM329 Block A workshop"
     ]
@@ -224,7 +224,7 @@
     "href": "whole_genome.html",
     "title": "5  Whole-Genome Comparison",
     "section": "",
-    "text": "5.1 The Type (Strain) Genome Server (TYGS)\nThe Type (Strain) Genome Server (TYGS) is provided by the Liebniz Institute DSMZ, the German collection of Microbes and Cell Cultures. It provides genome-based classification of organisms by comparison against a reference database of over 20,000 sequenced bacterial type strains. TYGS is tightly-coupled to the authoritative LPSN (List of Prokaryotic names with Standing in Nomenclature) database, to ensure nomenclaturally-correct identification",
+    "text": "5.1 The Type (Strain) Genome Server (TYGS)\nIn this part of the workshop, you will use public resources for whole-genome identification and classification of prokaryotes to help identify your isolate.\nThe Type (Strain) Genome Server (TYGS) is provided by the Liebniz Institute DSMZ, the German collection of Microbes and Cell Cultures. It provides genome-based classification of organisms by comparison against a reference database of over 20,000 sequenced bacterial type strains. TYGS is tightly-coupled to the authoritative LPSN (List of Prokaryotic names with Standing in Nomenclature) database, to ensure nomenclaturally-correct identification",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Whole-Genome Comparison</span>"
     ]
@@ -254,7 +254,7 @@
     "href": "lpsn.html",
     "title": "6  LPSN: the List of Prokaryotic names with Standing in Nomenclature",
     "section": "",
-    "text": "6.1 Investigating your classification at LPSN",
+    "text": "6.1 Investigating your classification at LPSN\nAlthough we have referred to authoritative sources there is, in fact, no offical classification of prokaryotes (Tindall (1999)). Also, the terms nomenclature, taxonomy, and phylogeny are not interchangeable.\nWe do not know the “true” evolutionary histories of organisms, so the phylogenies we reconstruct as scientists are estimates - sometimes very precise estimates! - of evolutionary history.\nThe phylogenies we construct allow us to make decisions about how to organise organisms into a taxonomy: groups of organisms (taxa) that comprise species, genera, phyla, and so on.\nThe names we give to taxa are governed by the rules of nomenclature. Those names are regulated by the International Code of Nomenclature of Prokaryotes (ICNP). This document is produced by the International Committee on Systematics of Prokaryotes (ICSP), a group of about 35 scientists who compose the rules by which bacteria are named.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>LPSN: the List of Prokaryotic names with Standing in Nomenclature</span>"
     ]
