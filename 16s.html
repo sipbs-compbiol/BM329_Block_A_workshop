@@ -252,7 +252,7 @@ BLAST reports a number of useful measures for each match
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Percent coverage: what proportion (percentage) of the <em>query</em> is similar enough to the match that it has been aligned</li>
+<li>Percent coverage: what proportion (percentage) of the <em>query</em> is similar enough to the match to which it has been aligned</li>
 <li>Percentage identity: what proportion of the aligned region is identical in both the <em>query</em> and the reported match</li>
 <li>Expectation (E-value): the number of matches you would expect by chance from this database that are <em>at least as similar as this one</em>, if you used the <em>query</em> sequence to search in a database of the same size made up of completely random sequences</li>
 </ul>
@@ -285,7 +285,7 @@ Caution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>NCBI do not manually curate (i.e.&nbsp;confirm sequence quality or correct identity) the data in their databases. Whole genome sequences are checked by classification algorithms for taxonomic placement, but 16S sequences are not. Also, NCBI contains a large amount of historical data which may have been annotated using outdated or superseded taxonomies.</p>
+<p>NCBI do not manually curate (i.e.&nbsp;confirm sequence quality or correct identity) the data in their databases. Whole genome sequences are checked for completeness by looking at the collection of annotated proteins, and also by classification algorithms for taxonomic placement, but 16S sequences are not. Also, NCBI contains a large amount of historical data which may have been annotated using outdated or superseded taxonomies. The names of BLAST matches in 16S databases should be treated with some caution.</p>
 </div>
 </div>
 <p><img src="assets/images/blast_16s/04-blast_database.png" class="img-fluid"></p>
@@ -381,7 +381,7 @@ Questions
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>What is the taxonomic identity of the <a href="https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/">last common ancestor (LCA)</a> that SILVA assigns to your isolate (<code>lca_tax_slv</code> or <code>LCA tax. SILVA</code> column)?</li>
+<li>What is the taxonomic identity of the <a href="https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/">last common ancestor (LCA)</a> that SILVA assigns to your isolate (<code>lca_tax_slv</code> or <code>LCA tax. SILVA</code> column - this is the last column of data in the file)?</li>
 <li>How similar (<code>Identity</code> column) does SILVA say your isolate is to that last common ancestor sequence?</li>
 </ol>
 </div>
