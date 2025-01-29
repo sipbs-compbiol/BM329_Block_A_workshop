@@ -19,7 +19,7 @@ BLAST is a bioinformatics tool developed by [NCBI (the National Center for Biote
 NCBI are the repository of record for published biological sequence data, and provide several BLAST databases, including one that contains all publicly-available 16S sequence data. You will use the [NCBI-BLAST webservice](https://blast.ncbi.nlm.nih.gov/Blast.cgi), with your isolate's 16S sequence as the query, to search this database. 
 
 ::: { .callout-tip title="BLAST reports a number of useful measures for each match"}
-- Percent coverage: what proportion (percentage) of the _query_ is similar enough to the match that it has been aligned
+- Percent coverage: what proportion (percentage) of the _query_ is similar enough to the match to which it has been aligned
 - Percentage identity: what proportion of the aligned region is identical in both the _query_ and the reported match
 - Expectation (E-value): the number of matches you would expect by chance from this database that are _at least as similar as this one_, if you used the _query_ sequence to search in a database of the same size made up of completely random sequences
 :::
@@ -41,7 +41,7 @@ NCBI are the repository of record for published biological sequence data, and pr
 4. In the section headed `Choose Search Set`, select rRNA/ITS databases. This will autopopulate the database with `16S Ribosomal RNA sequences (Bacteria and Archaea)`, NCBI's complete database of 16S rRNA sequences.
 
 ::: { .callout-caution }
-NCBI do not manually curate (i.e. confirm sequence quality or correct identity) the data in their databases. Whole genome sequences are checked by classification algorithms for taxonomic placement, but 16S sequences are not. Also, NCBI contains a large amount of historical data which may have been annotated using outdated or superseded taxonomies.
+NCBI do not manually curate (i.e. confirm sequence quality or correct identity) the data in their databases. Whole genome sequences are checked for completeness by looking at the collection of annotated proteins, and also by classification algorithms for taxonomic placement, but 16S sequences are not. Also, NCBI contains a large amount of historical data which may have been annotated using outdated or superseded taxonomies. The names of BLAST matches in 16S databases should be treated with some caution.
 :::
 
 ![](assets/images/blast_16s/04-blast_database.png)
@@ -97,7 +97,7 @@ You may need to adjust the widths of the headers in the result table to see the 
 7. Click on `Export to CSV` (lower left of `Alignment Result Table`) to download the classification result. You can view this file in `Excel` or in a plain text editor.
 
 ::: { .callout-important title="Questions"}
-1. What is the taxonomic identity of the [last common ancestor (LCA)](https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/) that SILVA assigns to your isolate (`lca_tax_slv` or `LCA tax. SILVA` column)?
+1. What is the taxonomic identity of the [last common ancestor (LCA)](https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/) that SILVA assigns to your isolate (`lca_tax_slv` or `LCA tax. SILVA` column - this is the last column of data in the file)?
 2. How similar (`Identity` column) does SILVA say your isolate is to that last common ancestor sequence?
 :::
 
