@@ -2,7 +2,7 @@
 
 Welcome to the BM329 (Biomedical Microbiology) Block A Microbial Identification workshop for {{< var ay >}}.
 
-This year is the first presentation of this workshop material, and we would be very grateful to hear feedback [by email](mailto:{{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
+We would be very grateful to hear feedback about this material [by email](mailto:{{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
 
 ## Overview
 
