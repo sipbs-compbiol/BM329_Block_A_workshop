@@ -12,7 +12,7 @@ You can download your data files using the links above. Clicking on the link may
 
 Alternatively, right-click (or `Ctrl-`click) on the link, and choose `Save file as…` (or similar) to save the file.
 
-These data files are also available from the [BM329 MyPlace page]().
+These data files are also available from the [BM329 MyPlace page](https://classes.myplace.strath.ac.uk/course/view.php?id=21635).
 :::
 
 ::: { .callout-note collapse="true"}
@@ -56,7 +56,7 @@ Avoid opening FASTA files in Word or other word-processing software. This softwa
 
 ## Draft genome sequence
 
-Your isolate's genome is not entirely complete, and is not in one single contiguous piece - therefore it is a _draft_ genome. Instead, it is in 41 _contigs_ (contiguous sequences) - sections of the genome. The contigs are not in order which means that, on the real genome, the second contig may not follow the first (and so on), and the first contig may not be where the genome "starts".
+Your isolate's genome is not entirely complete, and is not in one single contiguous piece - therefore it is a _draft_ genome. Instead, it is in 41 _contigs_ (contiguous sequences) - distinct sections of the genome. The contigs are not in order which means that, on the real genome, the second contig may not follow the first (and so on), and the first contig may not be where the genome "starts".
 
 The contigs are described in the [`isolate_genome.fasta`](assets/data/isolate_genome.fasta) file: one sequence per contig. Taken together, the total sequenced genome length is 5,116,355 bases, and the genome has a GC% content of 53.5%.
 
