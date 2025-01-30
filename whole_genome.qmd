@@ -50,6 +50,11 @@ TYGS compiles classification output into a PDF file, and presents the resulting 
 ::: { .callout-warning }
 This may take some time (maybe over an hour, depending on server load!), and may not be complete before the end of the workshop.
 
+**You can download TYGS example output (obtained 2025-01-29) from the links below**
+
+- [PDF output](assets/data/TYGS_job_results.pdf)
+- [Whole-genome tree](assets/images/TYGS/phylogram_whole_genome.png)
+
 **Please move on to the next section while you are waiting.**
 :::
 
