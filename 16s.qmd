@@ -111,7 +111,7 @@ You have used two different databases, and two different techniques, to assign t
 1. Do the BLAST and SILVA analyses give the same taxonomic identity for your 16S sequence?
 2. If the two results differ, how do they differ?
 3. If the results differ, how important do you think is the difference between the results?
-4. What is your current opinion about the identity of your isolate? Have you revised it since the BLAST search? How confident are you in the identification?
+4. What is your current opinion about the identity of your isolate? Have you revised it since the BLAST search? How confident are you in your identification?
 :::
 
 ::: { .callout-tip title="Continue your identification"}
