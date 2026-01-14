@@ -42,8 +42,8 @@ format:
     
     author-meta: "Leighton Pritchard"
   
-  pdf:
-    documentclass: scrreprt
+#  pdf:
+#    documentclass: scrreprt
 
 execute:
   freeze: auto
