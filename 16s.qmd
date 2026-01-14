@@ -90,7 +90,9 @@ While the job is waiting it will appear in the `Aligner Taskmanager` as _Queued_
 6. When the job is complete, select your result in the `Alignment Result Table`, and click on `Display Classification` 
 
 ::: { .callout-tip }
-You may need to adjust the widths of the headers in the result table to see the full classification
+You may need to adjust the widths of the headers in the result table to see the full classification.
+
+To do this, hover over a line dividing two columns, left-click and hold to grab it, then move the mouse left or right to resize the column.
 :::
 
 ![](assets/images/silva_16s/05-silva.png)
