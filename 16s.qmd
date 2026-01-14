@@ -99,8 +99,8 @@ To do this, hover over a line dividing two columns, left-click and hold to grab 
 7. Click on `Export to CSV` (lower left of `Alignment Result Table`) to download the classification result. You can view this file in `Excel` or in a plain text editor.
 
 ::: { .callout-important title="Questions"}
-1. What is the taxonomic identity of the [last common ancestor (LCA)](https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/) that SILVA assigns to your isolate (`lca_tax_slv` or `LCA tax. SILVA` column - this is the last column of data in the file)?
-2. How similar (`Identity` column) does SILVA say your isolate is to that last common ancestor sequence?
+1. What is the taxonomic identity of the [last common ancestor (LCA)](https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/) that SILVA assigns to your isolate (`lca_tax_slv` or `LCA tax. SILVA` column - this is the right-most column of data in the file)?
+2. How similar (`Identity` column) does SILVA say your isolate is to that last common ancestor (LCA) sequence?
 :::
 
 ## Summary
