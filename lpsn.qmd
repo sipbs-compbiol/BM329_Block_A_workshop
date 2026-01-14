@@ -37,10 +37,9 @@ The ICSP do not decide which organisms go into any particular taxon (genus, spec
 
 ::: { .callout-important title="Questions"}
 1. What kind of taxonomic category does this name represent?
-2. What does the name mean, and what does it imply about the bacteria?
-3. Is the name you entered a validly published taxonomic name?
-4. What is the `Taxonomic status` of this name?
-5. Is this name the "correct name" for the organism?
+2. What does the name mean, and what does it imply about the bacteria in this group?
+3. What is the `Taxonomic status` of this name?
+4. Is this name the "correct name" for the organism?
 :::
 
 ::: { .callout-warning collapse="true"}
