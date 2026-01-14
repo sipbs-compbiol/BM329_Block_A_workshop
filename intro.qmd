@@ -53,7 +53,7 @@ Treatment of brucellosis is unpleasant for the patient, and has hardly changed t
 Hospital staff potentially exposed to the infectious agent undergo the same treatment as prophylaxis.
 :::
 
-At the lab they've managed to sequence the bacterium that's in your blood, using an [Oxford Nanopore flongle](https://nanoporetech.com/products/sequence/flongle) they had lying around. The assembled draft genome has come back, but the [NHS is chronically underfunded and the staff are massively overworked](https://www.ft.com/content/b593116d-f948-4757-b2fa-c74adadc8b42), so your consultant hasn't had time to learn how to classify bacteria from genome sequence data.
+At the lab they've managed to sequence the bacterium that's in your blood, using an [Oxford Nanopore MinION](https://store.nanoporetech.com/uk/minion.html) they had lying around. The assembled draft genome has come back, but the [NHS is chronically underfunded and the staff are massively overworked](https://www.channel4.com/news/inside-nhs-hospital-at-96-capacity-as-new-report-warns-of-overcrowding-amid-flu-admissions-rise), so your consultant hasn't had time to learn how to classify bacteria from genome sequence data.
 
 "I'll have a go, if you like," you say. Then the light starts to hurt and you have a nap.
 
