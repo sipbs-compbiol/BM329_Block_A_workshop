@@ -28,3 +28,9 @@ By the end of this workshop, students will be able to:
 ## Assessment
 
 This workshop activity itself is not formally assessed although, as noted, all the material it contains is examinable. There is a formative assessment in the form of short answer questions [on MyPlace](https://classes.myplace.strath.ac.uk/course/view.php?id=21635), which you should complete as part of the workshop.
+
+## Navigation
+
+To move through the sections of this workshop in order, you can use the arrows at the foot of each page (for example, on this page you should see the `1. Introduction` arrow, which will take you to the start of the workshop proper).
+
+You can use the table of contents in the _right-hand_ sidebar to navigate between sections on a page, and the table in the _left-hand_ sidebar to move to each section of the workshop.

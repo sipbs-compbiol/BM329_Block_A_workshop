@@ -90,15 +90,17 @@ While the job is waiting it will appear in the `Aligner Taskmanager` as _Queued_
 6. When the job is complete, select your result in the `Alignment Result Table`, and click on `Display Classification` 
 
 ::: { .callout-tip }
-You may need to adjust the widths of the headers in the result table to see the full classification
+You may need to adjust the widths of the headers in the result table to see the full classification.
+
+To do this, hover over a line dividing two columns, left-click and hold to grab it, then move the mouse left or right to resize the column.
 :::
 
 ![](assets/images/silva_16s/05-silva.png)
 7. Click on `Export to CSV` (lower left of `Alignment Result Table`) to download the classification result. You can view this file in `Excel` or in a plain text editor.
 
 ::: { .callout-important title="Questions"}
-1. What is the taxonomic identity of the [last common ancestor (LCA)](https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/) that SILVA assigns to your isolate (`lca_tax_slv` or `LCA tax. SILVA` column - this is the last column of data in the file)?
-2. How similar (`Identity` column) does SILVA say your isolate is to that last common ancestor sequence?
+1. What is the taxonomic identity of the [last common ancestor (LCA)](https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/) that SILVA assigns to your isolate (`lca_tax_slv` or `LCA tax. SILVA` column - this is the right-most column of data in the file)?
+2. How similar (`Identity` column) does SILVA say your isolate is to that last common ancestor (LCA) sequence?
 :::
 
 ## Summary
@@ -109,7 +111,7 @@ You have used two different databases, and two different techniques, to assign t
 1. Do the BLAST and SILVA analyses give the same taxonomic identity for your 16S sequence?
 2. If the two results differ, how do they differ?
 3. If the results differ, how important do you think is the difference between the results?
-4. What is your current opinion about the identity of your isolate? Have you revised it since the BLAST search? How confident are you in the identification?
+4. What is your current opinion about the identity of your isolate? Have you revised it since the BLAST search? How confident are you in your identification?
 :::
 
 ::: { .callout-tip title="Continue your identification"}
